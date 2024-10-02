@@ -10,10 +10,18 @@
 */
 
 int main() {
-    printf("Entrer n : ");
     int n = 0;
-    scanf("%d", &n);
-    
+    do
+    {
+        printf("Entrer n : ");
+        scanf("%d", &n);
+        if (n < 0)
+        {
+            printf("Veuillez entrer un nombre positif.\n");
+        }
+        
+    } while (n< 0);
+
     int sum = 0;
     for (int i = 0; i < n; i++)
     {

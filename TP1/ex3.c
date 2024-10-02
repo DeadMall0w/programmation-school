@@ -41,10 +41,11 @@ int main()
     }
     else if (d == 0) // 1 solution
     {
-    float s1 = (- b - sqrt(d))/(2 * a);
+        float s = -b/(2 * a);
 
+        printf("La solution de l'équation est : \n");
+        printf("%f \n", s);
 
-        printf("Les 2 solutions de l'équation sont : \n");
     }
     else // pas de solution réel
     {

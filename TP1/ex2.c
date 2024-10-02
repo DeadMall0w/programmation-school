@@ -23,13 +23,23 @@ int isPerfectNumber(int number){
 
 int main()
 {
-    printf("Entrer n : ");
     int n = 0;
-    scanf("%d", &n);
+    do
+    {
+        printf("Entrer n : ");
+        scanf("%d", &n);
+        if (n < 0)
+        {
+            printf("Veuillez entrer un nombre positif.\n");
+        }
+        
+    } while (n< 0);
 
+
+    printf("La liste des nombres parfaits inférieurs à %d est :\n", n);
     for (int i = 1; i < n; i++)
     {
         if(isPerfectNumber(i) == 1)
-            printf("%d est parfait\n", i);
+            printf("- %d \n", i);
     }
 }
