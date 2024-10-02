@@ -7,7 +7,9 @@
 3 : 1+3+5 = 9
 4 : 1+3+5+9 = 16
 */
+
 int main() {
+    printf("Entrer n : ");
     int n = 0;
     scanf("%d", &n);
     
