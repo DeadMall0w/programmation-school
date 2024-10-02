@@ -5,7 +5,7 @@ nombre parfait :
 6=1+2+3
 */
 
-int isPerfectNumber(int number){
+int IsPerfectNumber(int number){
     int sum = 0;
     for (int i = 1 ; i < number ; i++)
     {
@@ -39,7 +39,7 @@ int main()
     printf("La liste des nombres parfaits inférieurs à %d est :\n", n);
     for (int i = 1; i < n; i++)
     {
-        if(isPerfectNumber(i) == 1)
+        if(IsPerfectNumber(i) == 1)
             printf("- %d \n", i);
     }
 }
