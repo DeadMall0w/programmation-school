@@ -32,5 +32,4 @@ int main()
         if(isPerfectNumber(i) == 1)
             printf("%d est parfait\n", i);
     }
-    
 }
