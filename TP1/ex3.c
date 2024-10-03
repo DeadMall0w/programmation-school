@@ -10,45 +10,51 @@ Vous envisagerez tous les cas de figure, y compris les cas ou certains coefficie
 
 int main()
 {
-    int a = 0;
-    int b = 0;
-    int c = 0;
+    double a = 0;
+    double b = 0;
+    double c = 0;
     double d = 0;
 
     printf("Entrer a : ");
-    scanf("%d", &a);
+    scanf("%lf", &a);
 
     printf("Entrer b : ");
-    scanf("%d", &b);
+    scanf("%lf", &b);
 
     printf("Entrer c : ");
-    scanf("%d", &c);
+    scanf("%lf", &c);
 
-    printf("Resolution de l equation : %fx² + %fx + %f = 0\n", a, b ,c);
+    printf("Resolution de l equation : %gx^2 + %gx + %g = 0\n", a, b ,c);
 
     d = b*b - 4*a*c;
-    printf("delta : %f\n", d);
+    printf("Delta : %.5g\n", d);
 
     if (d > 0) // 2 solutions
     {
         float s1 = (- b - sqrt(d))/(2 * a);
         float s2 = (- b + sqrt(d))/(2 * a);
 
-        printf("Les 2 solutions de l'équation sont : \n");
-        printf("%f \n", s1);
-        printf("%f \n", s2);
+        printf("Les 2 solutions de l equation sont : \n");
+        printf("%.5g \n", s1);
+        printf("%.5g \n", s2);
 
     }
     else if (d == 0) // 1 solution
     {
         float s = -b/(2 * a);
 
-        printf("La solution de l'équation est : \n");
-        printf("%f \n", s);
+        printf("La solution de l equation est : \n");
+        printf("%.5g \n", s);
 
     }
-    else // pas de solution réel
+    else // 2 solutions dans C
     {
-        printf("Pas de solution réel.\n");
+        float m = (- b)/(2 * a);
+        float q = (sqrt(-d))/(2 * a);
+        // float s2 = (- b + sqrt(d))/(2 * a);
+
+        printf("Les 2 solutions de l equation sont : \n");
+        printf("%.5g - %.5gi \n", m, q);
+        printf("%.5g + %.5gi \n", m, q);
     }
 }
