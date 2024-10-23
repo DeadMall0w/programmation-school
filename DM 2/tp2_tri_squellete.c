@@ -11,13 +11,13 @@
 #include <sys/time.h> //Necessaire pour utiliser la fonction gettimeofday
 #include "generation.h"
 
-int trierParSelection(double [], int longueur);
+void trierParSelection(double [], int longueur);
 int trouverPlusPetiteValeur(double [], int, int);
 
-int trierABulle(double _tab[], int longueur);
+void trierABulle(double _tab[], int longueur);
 void swap(double [], int, int);
 
-int trierParInsertion(double [], int );
+void trierParInsertion(double [], int );
 int trouverPosition(double [], int);
 
 int trouverPosition(double tab[], int index)
@@ -34,7 +34,7 @@ int trouverPosition(double tab[], int index)
 }
 
 // tri un tableau par la methode de tri par insertion
-int trierParInsertion(double tab[], int longueur)
+void trierParInsertion(double tab[], int longueur)
 {
     for (int i = 1; i < longueur; i++)
     {
@@ -49,11 +49,9 @@ int trierParInsertion(double tab[], int longueur)
         tab[j+1] = val;
 
     }
-    
-    return 0; // renvoie 0, donc bon fonctionnement
 }
 
-int trierABulle(double tab[], int longueur)
+void trierABulle(double tab[], int longueur)
 {
     for (int j = 0; j < longueur-1; j++)
     {
@@ -64,8 +62,6 @@ int trierABulle(double tab[], int longueur)
             }
         }
     }
-    
-    return 0; // renvoie 0, donc bon fonctionnement
 }
 
 void swap(double tab[], int i, int j)
@@ -75,7 +71,7 @@ void swap(double tab[], int i, int j)
     tab[i] = temp;
 }
 
-int trierParSelection(double tab[], int longueur)
+void trierParSelection(double tab[], int longueur)
 {
     for (int i = 0; i < longueur; i++)
     {
@@ -85,8 +81,6 @@ int trierParSelection(double tab[], int longueur)
         tab[minIndex] = tab[i];
         tab[i] = temp;
     }
-    
-    return 0; // renvoie 0, donc bon fonctionnement
 }
 
 int trouverPlusPetiteValeur(double tab[], int debut, int fin)

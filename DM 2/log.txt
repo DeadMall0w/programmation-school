@@ -1,0 +1,29 @@
+Script started on 2024-10-23 18:37:36+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="55" LINES="31"]
+[?2004h]0;rberquie@IG2I-2024-6: ~/Documents/GitHub/programmation-school/DM 2[01;32mrberquie@IG2I-2024-6[00m:[01;34m~/Documents/GitHub/programmation-school/DM 2[00m$ ./exe
+[?2004lVeuillez entrer les tailles du tableau 
+Longeur : 10
+Hauteur : 15
+Nombres correctes[?2004h]0;rberquie@IG2I-2024-6: ~/Documents/GitHub/programmation-school/DM 2[01;32mrberquie@IG2I-2024-6[00m:[01;34m~/Documents/GitHub/programmation-school/DM 2[00m$ ./exe
+[?2004lVeuillez entrer les tailles du tableau 
+Longeur : -5
+Hauteur : 10
+Veuillez entrer un nombre de colonne positif.
+Longeur : 6 - 5    
+Hauteur : -5
+Veuillez entrer un nombre de ligne positif.
+Longeur : 10
+Hauteur : 22
+Veuillez entrer un nombre de ligne inférieur a 21.
+Trop d'échec, arrêt du programme.
+[?2004h]0;rberquie@IG2I-2024-6: ~/Documents/GitHub/programmation-school/DM 2[01;32mrberquie@IG2I-2024-6[00m:[01;34m~/Documents/GitHub/programmation-school/DM 2[00m$ ./exe
+[?2004lVeuillez entrer les tailles du tableau 
+Longeur : 0
+Hauteur : 0
+Nombres correctes[?2004h]0;rberquie@IG2I-2024-6: ~/Documents/GitHub/programmation-school/DM 2[01;32mrberquie@IG2I-2024-6[00m:[01;34m~/Documents/GitHub/programmation-school/DM 2[00m$ ./exe
+[?2004lVeuillez entrer les tailles du tableau 
+Longeur : 20
+Hauteur : 20
+Nombres correctes[?2004h]0;rberquie@IG2I-2024-6: ~/Documents/GitHub/programmation-school/DM 2[01;32mrberquie@IG2I-2024-6[00m:[01;34m~/Documents/GitHub/programmation-school/DM 2[00m$ [?2004l
+exit
+
+Script done on 2024-10-23 18:38:34+02:00 [COMMAND_EXIT_CODE="0"]

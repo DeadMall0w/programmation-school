@@ -9,13 +9,12 @@ int main() {
     int longeur,nb_error = 0;
     do
     {
-        printf("Longeur : ");
-        scanf("%d", &longeur);
-
-        if (nb_error >= 2){
+        if (nb_error >= 3){
             printf("Trop d'échec, arrêt du programme.\n");
             return 1;
         }
+        printf("Longeur : ");
+        scanf("%d", &longeur);
         if (longeur < 0)
         {
             printf("Veuillez entrer un nombre positif.\n");

@@ -40,7 +40,33 @@ int main() {
         {
             printf("Entrée incorrecte, passage en mode test");
         }
-        // tests
+        // Test 1 : Tableau déjà trié
+        int longeur1 = 5;
+        int tab1[] = {1, 2, 3, 4, 5};
+        printf("\nTest 1 : Tableau déjà trié\n");
+        trierParSelection(tab1, longeur1);
+        afficherTableau(tab1, longeur1);
+
+        // Test 2 : Tableau trié à l'envers
+        int longeur2 = 5;
+        int tab2[] = {5, 4, 3, 2, 1};
+        printf("\nTest 2 : Tableau trié à l'envers\n");
+        trierParSelection(tab2, longeur2);
+        afficherTableau(tab2, longeur2);
+
+        // Test 3 : Tableau avec des doublons
+        int longeur3 = 6;
+        int tab3[] = {4, 1, 3, 4, 2, 1};
+        printf("\nTest 3 : Tableau avec des doublons\n");
+        trierParSelection(tab3, longeur3);
+        afficherTableau(tab3, longeur3);
+
+        // Test 4 : Tableau avec un seul élément
+        int longeur4 = 1;
+        int tab4[] = {42};
+        printf("\nTest 4 : Tableau avec un seul élément\n");
+        trierParSelection(tab4, longeur4);
+        afficherTableau(tab4, longeur4);
     }
     
 }

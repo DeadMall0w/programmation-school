@@ -42,32 +42,6 @@ int main() {
         
     } while (nb_ligne< 0 || nb_ligne>MAXTABSIZE || nb_colonne<0 || nb_colonne>MAXTABSIZE);
     
-    printf("Vous avez choisi un tableau de longueur : %d", nb_ligne);
-    for (int i = 0; i < nb_colonne; i++)
-    {
-        for (int j = 0; j < nb_ligne; j++)
-        {
-            printf("\nEntrez la valeur du tableau à la colonne %d, à la ligne %d = ", i, j);
-            int v = 0;
-            scanf("%d", &v);
-            tab[i][j] = v;
-        }
-        
-    }
-
-
-    printf("Les valeurs du tableau sont : \n\n");
-    for(int k = 0; k < nb_colonne; k++)
-    {
-        printf("colonne %d : ", k);
-        for (int n = 0; n < nb_ligne; n++)
-        {
-            printf("%d | ", tab[k][n]);
-        }
-
-        printf("\n");
-        
-    }
-    return 0;
+    printf("Nombres correctes");
     
 }
