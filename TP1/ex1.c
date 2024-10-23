@@ -10,6 +10,7 @@
 */
 
 int main() {
+	printf("Ceci est un test");
     int n = 0;
     do
     {
