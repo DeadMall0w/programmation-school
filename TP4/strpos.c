@@ -3,7 +3,7 @@
 
 typedef char TChaine[STRINGSIZE+1];
 typedef char TPosition;
-TPosition strpos(const TChaine, const TChaine);
+TPosition strpos(char *, char *);
 
 int main()
 {
@@ -11,30 +11,38 @@ int main()
     TChaine mot = "le";
     TChaine ch = "Bonjour tout le monde";
     p = strpos(mot, ch);
-    printf("%d", p);
+    if (p == -1)
+    {
+        printf("Le mot n'a pas été trouvé\n");
+    }
+    else
+    {
+        printf("Le mot à été trouvé en position : %d\n", p);
+    }
     return 0;
 }
 
-//Fonction strpos (Tchaine mot, Tchaine ch) : Tposition ;
-TPosition strpos(const TChaine mot, const TChaine ch)
+/*
+Nom : strpos
+Entrée : mot à chercher, chaine dans lequel on cherche le mot 
+Sortie : Position du mot dans la chaine si trouvé, sinon -1
+Principe : Renvoie la position du mot dans la chaine si le mot es trouvé, sinon il renvoie -1
+*/
+TPosition strpos(char * mot,char * ch)
 {
     char i = 0;
     char j = 0;
-    char debutMot = -1;
+    TPosition debutMot = -1;
     while (ch[i] != '\0')
     {
-        //printf("%c", ch[i]);
         if (ch[i] == mot[j])
         {
-          //  printf("mot[%d] = %c, mot[%d] = %c",j, mot[j], i, ch[i]);
             if (debutMot == -1)
                 debutMot = i;
             
             j++;
             if (mot[j] == '\0')
-            {
                 return debutMot;
-            }
         }
         else
         {
@@ -47,13 +55,9 @@ TPosition strpos(const TChaine mot, const TChaine ch)
                 
                 j++;
                 if (mot[j] == '\0')
-                {
                     return debutMot;
-                }
             }
         }
-
-        
         i++;
     }
     
