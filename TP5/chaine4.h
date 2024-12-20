@@ -18,6 +18,7 @@
 #define	VRAI	1
 #define	FAUX	0
 
+
 typedef char Tchaine[MAXCAR+1];
 
 

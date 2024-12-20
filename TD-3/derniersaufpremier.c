@@ -11,7 +11,6 @@ int main()
     
     TChaine chaine = "Pas le premier mot bonjour";
     TChaine mot = "";
-    TChaine tmp = "";
 
     
     while (1)
