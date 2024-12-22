@@ -51,7 +51,6 @@ int main()
     {
         float m = (- b)/(2 * a);
         float q = (sqrt(-d))/(2 * a);
-        // float s2 = (- b + sqrt(d))/(2 * a);
 
         printf("Les 2 solutions de l equation sont : \n");
         printf("%.5g - %.5gi \n", m, q);

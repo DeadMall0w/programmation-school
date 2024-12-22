@@ -87,6 +87,11 @@ int member(const Tchaine ssch, const Tchaine ch)
 
 char * efface(char * ch, const Tchaine mot)
 {
+    if (EGAL(ch, mot))
+    {
+        ch[0] = '\0';
+        return ch;
+    }
     while(strpos(mot, ch) != -1)
     {
         int pos = strpos(mot, ch);
@@ -100,7 +105,6 @@ char * efface(char * ch, const Tchaine mot)
         i = pos+taille;
         while(ch[i] != '\0')
         {
-            printf("%c\n", ch[i]);
             ch[i-taille] = ch[i];
             i++;
         }

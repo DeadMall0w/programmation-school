@@ -111,7 +111,7 @@ case 28 : //Commande effacer (eff)
   printf("Tapez une deuxième chaine : ");
   fgets(s2, MAXCAR,stdin);format(s2);
 
-  printf("\nLes deux chaines concaténé est = '%s' \n ", efface(s1,s2)) ; 
+  printf("\nLa nouvelle chaine est = '%s' \n ", efface(s1,s2)) ; 
   getchar();
   
   break;
