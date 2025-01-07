@@ -20,10 +20,11 @@ short insererpers(Ttabpers Rep, short * der, Tchaine nom)
 {
     *der += 1;
     short i = 1;
-    while (strcmp(Rep[i], nom) < 0 && Rep[i][0] != '\0') // TODO :AJOUTER verif de taille
+    while (strcmp(Rep[i], nom) < 0 && Rep[i][0] != '\0') //TODO :AJOUTER verif de taille
     {
         i++;
     }
+
 
     printf("\n \nAjout de %s la position : %d \n", nom, i);
     
@@ -35,12 +36,12 @@ short insererpers(Ttabpers Rep, short * der, Tchaine nom)
     }
     
     strcpy(Rep[i], nom);
-    return 1;
+    return i;
 }
 
 
 
-void afficherrep(Ttabpers Rep, short der)
+void afficherrep(const Ttabpers Rep, short der)
 {
     printf("\n\nAffichage de la liste des clients... \n");
     for (short i = 1; i <= der; i++)
@@ -52,5 +53,21 @@ void afficherrep(Ttabpers Rep, short der)
 
 short supprimerpers(Ttabpers Rep, short * der, int position)
 {
+    // la paramètre formel ‘position’ désigne la position dans l’annuaire du client à supprimer 
+    int i; //compteur
+    int pos; //mémoire
 
+    if (position > *der || position <1) 
+        return 0 ;
+    else
+    {
+        pos = position ;
+        for (i = position; i <= *der-1; i++)
+        {
+            strcpy(Rep[i],Rep[i+1]);
+        }
+
+        *der = *der -1 ;
+        return  pos ;
+    }
 }

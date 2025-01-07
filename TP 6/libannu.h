@@ -11,6 +11,6 @@ short chercherpers(Ttabpers Ttebpers, short der, Tchaine nom);
 
 short insererpers(Ttabpers Rep, short * der, Tchaine nom);
 
-void afficherrep(Ttabpers Rep, short der);
+void afficherrep(const Ttabpers Rep, short der);
 
 short supprimerpers(Ttabpers Rep, short * der, int position);
