@@ -7,7 +7,7 @@ typedef char Tchaine[MAXCAR+1]; //Le +1 c'est pour le caractere '\0'
 typedef Tchaine Ttabpers[MAXPERS+1]; //Le +1 c'est pour la sentinelle
 
 
-short chercherpers(Ttabpers Ttebpers, Tchaine nom);
+short chercherpers(Ttabpers Ttebpers, short der, Tchaine nom);
 
 short insererpers(Ttabpers Rep, short * der, Tchaine nom);
 
