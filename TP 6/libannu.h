@@ -6,11 +6,12 @@ typedef char Tchaine[MAXCAR+1]; //Le +1 c'est pour le caractere '\0'
 #define MAXPERS 10000
 typedef Tchaine Ttabpers[MAXPERS+1]; //Le +1 c'est pour la sentinelle
 
+typedef short Telt;
 
-short chercherpers(Ttabpers Ttebpers, short der, Tchaine nom);
+Telt chercherpers(Tchaine Rep[], Telt der, Tchaine nom);
 
-short insererpers(Ttabpers Rep, short * der, Tchaine nom);
+Telt insererpers(Tchaine Rep[], Telt * der, char nom[]);
 
-void afficherrep(const Ttabpers Rep, short der);
+void afficherrep(const Tchaine Rep[], Telt der);
 
-short supprimerpers(Ttabpers Rep, short * der, int position);
+Telt supprimerpers(Tchaine Rep[], Telt * der, int position);
