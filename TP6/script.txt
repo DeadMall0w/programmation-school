@@ -1,0 +1,501 @@
+Script started on 2025-01-16 23:15:00+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="67" LINES="32"]
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ make clean
+[?2004l
+rm libannu.o annuaire
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ make
+[?2004l
+gcc -c libannu.c
+gcc annuaire.o libannu.o -o annuaire
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Adrien
+
+ Nom saisi : 'Adrien'
+ 
+Ajout de Adrien la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Raphael
+
+ Nom saisi : 'Raphael'
+ 
+Ajout de Raphael la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Elias
+
+ Nom saisi : 'Elias'
+ 
+Ajout de Elias la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Martin
+
+ Nom saisi : 'Martin'
+ 
+Ajout de Martin la position : 3 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :4
+
+
+Affichage de la liste des clients... 
+1 : Adrien
+2 : Elias
+3 : Martin
+4 : Raphael
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :4 5
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1 4
+
+
+Affichage de la liste des clients... 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :5
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Martin
+
+ Nom saisi : 'Martin'
+ 
+Ajout de Martin la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Raphael
+
+ Nom saisi : 'Raphael'
+ 
+Ajout de Raphael la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Adrien
+
+ Nom saisi : 'Adrien'
+ 
+Ajout de Adrien la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :4
+
+
+Affichage de la liste des clients... 
+1 : Adrien
+2 : Martin
+3 : Raphael
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :5
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ echo "Test  
+de la fonction recherche"
+[?2004l
+Test de la fonction recherche
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ echo "Test de la fonction recherche"[A
+]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Adrien
+
+ Nom saisi : 'Adrien'
+ 
+Ajout de Adrien la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Elias
+
+ Nom saisi : 'Elias'
+ 
+Ajout de Elias la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Martin
+
+ Nom saisi : 'Martin'
+ 
+Ajout de Martin la position : 3 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :2
+
+ Saisir un nom :Adrien
+
+ La position est 1 !!
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :2
+
+ Saisir un nom :Marrt  tin
+
+ La position est 3 !!
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :2
+
+ Saisir un nom :Raphael
+
+ La position est 0 !!
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :5
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "Test
+
+de la fonction recherche"[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"s"u"p"p"r"i"m"e"r"
+[?2004l
+Test de la fonction supprimer
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ echo "Test de la fonction supprimer"[A
+]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ 1[K./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Adrien
+
+ Nom saisi : 'Adrien'
+ 
+Ajout de Adrien la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Elias
+
+ Nom saisi : 'Elias'
+ 
+Ajout de Elias la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Martin
+
+ Nom saisi : 'Martin'
+ 
+Ajout de Martin la position : 3 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :3
+
+ Saisir un nom :Adrien
+
+ Adrien a ete supprimee de l'annuaire !!!
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :4
+
+
+Affichage de la liste des clients... 
+1 : Elias
+2 : Martin
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :5
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Adrien
+
+ Nom saisi : 'Adrien'
+ 
+Ajout de Adrien la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Elias
+
+ Nom saisi : 'Elias'
+ 
+Ajout de Elias la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Martin
+
+ Nom saisi : 'Martin'
+ 
+Ajout de Martin la position : 3 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :3
+
+ Saisir un nom :Martin
+
+ Martin a ete supprimee de l'annuaire !!!
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :4
+
+
+Affichage de la liste des clients... 
+1 : Adrien
+2 : Elias
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :5$ 
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ ./annuaire  
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Adirn   rien
+
+ Nom saisi : 'Adrien'
+ 
+Ajout de Adrien la position : 1 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Elias
+
+ Nom saisi : 'Elias'
+ 
+Ajout de Elias la position : 2 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :1
+
+ Saisir un nom :Martin
+
+ Nom saisi : 'Martin'
+ 
+Ajout de Martin la position : 3 
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :3
+
+ Saisir un nom :Raphael
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :4
+
+
+Affichage de la liste des clients... 
+1 : Adrien
+2 : Elias
+3 : Martin
+
+ 1-  Entrer un nom de client
+ 2-  Rechercher la position d'un client
+ 3-  Supprimer un client de l'annuaire 
+ 4-  Afficher l'annuaire 
+ 5-  Quitter
+  Votre choix :5
+
+ FIN !!!
+
+[?2004h]0;rapha@Bonnie: ~/Documents/Info/programmation-school/TP6[01;32mrapha@Bonnie[00m:[01;34m~/Documents/Info/programmation-school/TP6[00m$ exit
+[?2004l
+exit
+
+Script done on 2025-01-16 23:20:06+01:00 [COMMAND_EXIT_CODE="1"]
