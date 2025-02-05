@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- **** H E A D **** -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Applications Multimédia pour le Web</title>
+
+	<style>
+
+		.conteneur {
+				border:1px black solid;
+				background-color:lightgrey;
+		}
+
+		span {
+			background-color:yellow;
+			border:1px black solid;
+		}
+
+		.yellow {
+			background-color:yellow;
+			border:1px black solid;
+		}
+
+
+		.relatif {
+				position:relative;
+				right:10px;top:10px;
+		}
+
+		.absolu {
+				position:absolute;
+				right:10px;top:10px;
+		}
+
+		#conteneur4 {
+				position:relative;			
+		}
+
+		.flottant_gauche {
+					float:left;
+		}
+
+		.flottant_droit {
+					float:right;
+		}
+
+		.stop_flottant_gauche {
+					clear:left;
+		}
+
+
+
+
+	</style>
+</head>
+<!-- **** F I N **** H E A D **** -->
+
+<!-- **** B O D Y **** -->
+<body>
+
+	<span class="flottant_gauche"><b>float:left</b><br > span flottant à gauche</span>
+
+	Texte après le flottant : il s'écoule le long du flottant. Lorsqu'il a terminé, il reprend à partir de la marge gauche. Texte après le flottant : il s'écoule le long du flottant. Lorsqu'il a terminé, il reprend à partir de la marge gauche. Texte après le flottant : il s'écoule le long du flottant. Lorsqu'il a terminé, il reprend à partir de la marge gauche. Texte après le flottant : il s'écoule le long du flottant. Lorsqu'il a terminé, il reprend à partir de la marge gauche. Texte après le flottant : il s'écoule le long du flottant. Lorsqu'il a terminé, il reprend à partir de la marge gauche.
+	</div>
+
+<hr />
+
+
+	<div class="yellow flottant_gauche"><b>float:left</b> <br />div flottant à gauche</div>
+
+	Texte après le div : il s'écoule le long du div.
+	<div> <b> (div) Même s'il est dans un div ! (/div) </b> </div> 
+	Lorsqu'il a terminé, il reprend à partir de la marge gauche.
+	</div>
+
+
+<hr />
+
+	<div class="yellow flottant_gauche"><b>float:left</b> <br /> div flottant à gauche</div>
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	<div class="stop_flottant_gauche"> <b>(div : clear:left)</b>
+	Pour arrêter l'écoulement, on utilise la propriété clear.
+	</div>
+	
+	</div>
+<hr />
+
+	<div class="yellow flottant_gauche"><b>float:left</b> <br /> div flottant à gauche</div>
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	Texte après le div : il s'écoule le long du div. 
+	<span class="stop_flottant_gauche"> <b>(span : clear:left)</b>
+	Pour arrêter l'écoulement, on utilise la propriété clear, <b>dans un div !</b>
+	</span>
+	
+	</div>
+
+
+
+<hr />
+
+	<div class="yellow flottant_droit"><b>float:right</b> <br /> div flottant <br /> à droite</div>
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	Texte <b>après</b> le div : il s'écoule le long du div. 
+	<div class="stop_flottant_gauche"> <b>(div : clear:left)</b>
+	Pour arrêter l'écoulement, on utilise la propriété clear, <b>du bon côté !</b>	Pour arrêter l'écoulement, on utilise la propriété clear, <b>du bon côté !</b>	Pour arrêter l'écoulement, on utilise la propriété clear, <b>du bon côté !</b>
+	</div>
+	
+	</div>
+
+
+</body>
+
+<!-- **** F I N **** B O D Y **** -->
+
+
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- **** H E A D **** -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>TP1</title>
+
+	<style>
+		div {
+			border: 1px dashed black;
+			background-color:lightgrey;
+			height:50px;
+		}
+		.disp_inline{
+				display:inline;
+				height:50px;
+				
+		}
+		.disp_ib{
+				display:inline-block;
+				height:50px;
+				
+		}
+		.disp_block{
+				display:block;
+				height:50px;
+		}
+		#popup{
+				height:100px;
+				width:100px;
+				padding:5px;
+				position:absolute;
+				top:50px;
+				right:50px;
+				display:none;
+				background-color:yellow;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function afficher_popup()
+		{			
+			noeud = document.getElementById("popup");
+			noeud.style.display = "block";
+		}
+
+		function cacher_popup()
+		{
+			noeud = document.getElementById("popup");
+			noeud.style.display = "none";
+		}
+	</script>
+
+</head>
+<!-- **** F I N **** H E A D **** -->
+
+<!-- **** B O D Y **** -->
+<body>
+
+</body>
+
+<!-- **** F I N **** B O D Y **** -->
+
+
+</html>

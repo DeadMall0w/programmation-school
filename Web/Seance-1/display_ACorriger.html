@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- **** H E A D **** -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Applications Multimédia pour le Web</title>
+
+	<style>
+		div {
+			border: 1px dashed black;
+			background-color:lightgrey;
+			height:50px;
+		}
+		.disp_inline{
+				display:inline;
+				height:50px;
+				
+		}
+		.disp_block{
+				display:block;
+				height:50px;
+		}
+		#popup{
+				height:100px;
+				width:100px;
+				padding:5px;
+				position:absolute;
+				top:50px;
+				right:50px;
+				display:none;
+				background-color:yellow;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		var noeud = document.getElementById("popup");	// var globale
+
+		// ne marche pas... pourquoi ? 
+
+		function afficher_popup()
+		{			
+			noeud.style.display = "block";
+		}
+
+		function cacher_popup()
+		{
+			noeud.style.display = "none";
+		}
+	</script>
+
+</head>
+<!-- **** F I N **** H E A D **** -->
+
+<!-- **** B O D Y **** -->
+<body>
+
+	avant 1
+	<div>Paragraphe 1 par défaut</div>
+	après 1
+	<hr />
+
+	avant 2
+	<div class="disp_block">Paragraphe 2 en mode display=block</div>
+	après 2
+
+	<hr />
+
+	avant 3
+	<div class="disp_inline">Paragraphe en mode display=inline</div>
+	après 3
+
+	<hr />
+
+	avant popup
+	<div id="popup">Paragraphe en mode display=none</div>
+	après popup
+
+	<hr />
+
+	<input type="button" value="Afficher popup" onclick="afficher_popup();"/>
+	<input type="button" value="Cacher popup" onclick="cacher_popup();"/>
+
+
+</body>
+
+<!-- **** F I N **** B O D Y **** -->
+
+
+</html>

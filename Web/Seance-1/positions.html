@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- **** H E A D **** -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Applications Multimédia pour le Web</title>
+
+	<style>
+
+		.parent {
+				border:1px black solid;
+				background-color:lightgrey;
+		}
+
+		span {
+			background-color:yellow;
+			border:1px black solid;
+		}
+
+
+		.relatif {
+				position:relative;
+				right:10px;top:10px;
+		}
+
+		.absolu {
+				position:absolute;
+				right:10px;top:10px;
+		}
+
+		#Parent4 {
+				position:relative;			
+		}
+
+
+
+	</style>
+</head>
+<!-- **** F I N **** H E A D **** -->
+
+<!-- **** B O D Y **** -->
+<body>
+... ligne 1 ... <br />
+... ligne 2 ... <br />
+
+	<div class="Parent">
+	Parent 1 <b>non positionné</b> <br />
+	
+	contenant du texte avant
+	<span>span 1 <b>non positionné</b></span>
+	et après le span
+	</div>
+
+<hr />
+
+	<div class="Parent">
+	Parent 2 <b>non positionné</b> < br/>
+
+	contenant du texte avant
+	<span class="relatif">span 2 positionné <b>en relatif</b>, right:10px top:10px</span>
+	et après le span
+	</div>
+
+<hr />
+
+	<div class="Parent">
+	Parent 3 <b>non positionné</b> <br />
+
+	contenant du texte avant
+	<span class="absolu">span 3 positionné <b>en absolu</b>, right:10px top:10px</span>
+	et après le span
+	</div>
+
+<hr />
+
+	<div class="Parent" id="Parent4">
+	Parent 4 <b>positionné en relatif (sans déplacement !)</b> <br />
+
+	contenant du texte avant
+	<span class="absolu">span 4 positionné <b>en absolu</b>, right:10px top:10px</span>
+	et après le span
+	</div>
+
+<hr />
+
+</body>
+
+<!-- **** F I N **** B O D Y **** -->
+
+
+</html>
