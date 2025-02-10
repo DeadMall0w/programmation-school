@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+	<style>
+	
+	</style>
+
+	<script language="javascript">
+
+	function random_i(min,max)
+	{
+		return Math.floor(Math.random() * (max-min+1)) + min;
+	}
+
+	function alea(){
+		var keylistM ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var keylistm ="abcdefghijklmnopqrstuvwxyz";
+
+		
+		var temp="";
+		for (i=0;i<3;i++)
+		{
+			temp+=keylistM.charAt(random_i(0,keylistM.length));
+			temp+=keylistm.charAt(random_i(0,keylistm.length));
+			temp+=random_i(0,9);
+		}
+		return temp;
+	}
+
+	function init()
+	{
+		// initialisation
+	}
+
+
+	</script>
+
+
+
+</head>
+<body onload="init();">
+
+<form action="" method="">
+
+<fieldset id="dataPerso">
+<legend>Données Personnelles</legend>
+
+<!-- Ensemble de champs: Données personnelles -->
+
+<label class="info" for="txtNom">Nom:</label> 
+<input id="txtNom" type="text" value="" name="nom"/> 
+<br/>
+
+<label class="info" for="txtPrenom">Prénom:</label>
+<input id="txtPrenom" type="text" value="" name="prenom"/> 
+<br/>
+
+<label class="info" for="txtDateNaissance">Date de naissance:</label> 
+<input id="txtDateNaissance" type="text" value="" name="naissance"/> 
+<br/>
+
+<fieldset id="sexe">
+<legend>Sexe</legend>
+<label for="sexeF">Femme</label> 
+<input type="radio" id="sexeF" name="sexe"/> 
+<br />
+<label for="sexeH">Homme</label>
+<input type="radio" id="sexeH" name="sexe"/> 
+<br/>
+</fieldset>
+
+<label for="promo">Promotion:</label>
+<select id="promo" name="promo" >
+<option value="G1" > G1 </option>
+<option value="G2" > G2 </option>
+<option value="G3" > G3 </option>
+</select>
+<br/>
+
+</fieldset>
+
+
+<fieldset id="identifiants">
+<legend>Identifiants</legend>
+<!-- Ensemble de champs: Identifiants -->
+
+<label class="info" for="txtLogin">Login:</label> 
+<input onclick="select();" id="txtLogin" type="text" value="" name="login"/> 
+<br/> 
+
+<label class="info" for="txtPasse">Mot de Passe:</label> 
+<input onclick="select();" id="txtPasse" type="password" value="" name="passe"/> 
+<br/>
+
+<label for="cbNewsletter">S'inscrire à la newsletter:</label>
+<input id="cbNewsletter" type="checkbox" value="" name="newsletter"/> 
+<br/>
+
+</fieldset>
+
+
+
+<fieldset id="competences">
+<legend>Compétences & Centres d'intérêt </legend>
+<!-- Ensemble de champs: Compétences & Centres d'intérêt  -->
+
+<label for="selCompetences" multiple="multiple">Compétences:</label> 
+<select id="selCompetences[]" name="competences">
+<optgroup label="Informatique">
+<option> Language C </option>
+<option> Shell Linux </option>
+<option> Language HTML </option>
+<option> Feuilles de style en Cascade</option>
+<option> Language Javascript</option>
+<option> Language PHP</option>
+<option> Language SQL</option>
+</optgroup>
+<optgroup label="EEA">
+<option> Electronique</option>
+<option> Electricité </option>
+<option> Micro-Informatique </option>
+</optgroup>
+<optgroup label="Divers">
+<option> Culture & Communication</option>
+<option> Mécanique </option>
+<option> Tchatche </option>
+</optgroup>
+
+</select>
+<br/>
+
+<label for="selCentresInteret">Centres d'intérêt:</label>
+<select id="selCentresInterets[]" multiple="multiple" name="interets">
+<optgroup label="Sportifs">
+<option> Football</option>
+<option> Badminton </option>
+<option> Escalade </option>
+<option> Echecs </option>
+</optgroup>
+<optgroup label="Culturels">
+<option> Lecture</option>
+<option> Musique </option>
+<option> Peinture </option>
+</optgroup>
+<optgroup label="Autres">
+<option> Jeux Vidéo</option>
+</optgroup>
+</select>
+<br/>
+
+</fieldset>
+
+<div id="envoi">
+<!-- Envoi des donnés -->
+<input type="submit" value="Envoyer" />
+<input type="button" value="Generer"/>
+<input id="btnShow" type="button" value="Afficher" />
+</div>
+
+</form>
+
+<div id="popup"></div>
+  
+</body>
+<!-- **** F I N **** B O D Y **** -->
+
+</html>
