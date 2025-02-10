@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- **** H E A D **** -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Applications Multimédia pour le Web</title>
+
+	<style>
+		div {
+			border: 1px dashed black;
+			background-color:rgb(255, 255, 255);
+		}
+
+        #content
+        {
+            display: flex;
+            background-color: white;
+            border: none;
+            height: 100em;
+        }
+        textarea
+        {
+            margin-top: 10px;
+            resize: none;
+        }
+
+        #code
+        {
+            width: 49%;
+            margin-right: 2%;
+            left: 0px;
+            height: 100;
+        }
+
+        #html
+        {
+            margin-top: 10px;
+            resize: none;
+            width: 49%;
+            left: 0px;
+            height: 100;
+        }
+
+        img
+        {
+            width: 50%;
+            height: auto;
+        }
+
+	</style>
+
+	<script type="text/javascript">
+        let html;
+        let textArea;
+        let autoUpdate = false;
+        let autoUpdateElement;
+
+		function init(){
+            html = document.getElementById("html");
+            textArea = document.getElementById("code");
+            autoUpdateElement = document.getElementById("auto-update"); 
+        }
+
+        function Update()
+        {
+            console.log("Update");
+            html.innerHTML = "<img src=\"ajaxLoader3.gif\">";
+            setTimeout(() => {
+            console.log("show");
+            html.innerHTML = textArea.value;
+            }, 1000)
+
+        }
+
+        function keyUp()
+        {
+            if (autoUpdate){
+                Update();
+            }
+        }
+
+        function changeAutoUpdate()
+        {
+            autoUpdate = autoUpdateElement.checked; 
+            keyUp();
+        }
+
+        async function timUpdate()
+        {
+            setTimeout(() => {
+            timUpdate();
+            Update();
+            }, 2000)
+        }
+
+        //timUpdate();
+
+	</script>
+
+</head>
+<!-- **** F I N **** H E A D **** -->
+
+<!-- **** B O D Y **** -->
+<body onload="init()">
+    
+</body>
+
+<!-- **** F I N **** B O D Y **** -->
+<div id="header">
+    <input type="button" name="update" value="Mettre à jour" onclick="Update();">
+    <input type="checkbox" name="auto-update" id="auto-update" onclick="changeAutoUpdate();">
+    <label for="auto-update">Mise à jour automatique</label>
+</div>
+
+<div id="content">
+
+    <textarea name="code" id="code" onkeyup="keyUp();"></textarea>
+    <div name="html" id="html">
+    </div>
+</div>
+</html>
