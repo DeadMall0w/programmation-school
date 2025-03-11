@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Spoti2I</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+
+</head>
+<body onload="init()">
+	<div>
+		<h1>Playlist</h1>
+		<p id="playlist-name">Nom de base</p>
+	</div>
+
+	<div>
+		<h1 id="list">Liste</h1>
+		<div id="list-container"></div>
+
+	</div>
+	
+	<div>
+		<h1>Filtrage</h1>
+		<label for="search-type">Type de valeur à chercher : </label>
+		<select onclick="UpdateListe()" name="" id="search-type">
+			<option value="title">Titre</option>
+			<option value="artiste">Artiste</option>
+			<option value="album">Album</option>
+		</select>
+		
+		<br>
+		<label for="search-value">Valeur à chercher : </label>
+		<input onkeyup="UpdateListe()" type="text" id="search-value">
+
+	</div>
+
+	<div>
+		<h1>Ajout</h1>
+		<label for="titre">Titre : </label>
+		<input type="text" id="titre">
+		<br>
+		<label for="album">Album : </label>
+		<input type="text" id="album">
+		<br>
+		<label for="artiste">Artiste : </label>
+		<input type="text" id="artiste">
+		<br>
+		<label for="image">Image : </label>
+		<input type="text" id="image">
+		<br>
+		<label for="lien">Lien : </label>
+		<input type="text" id="lien">
+		<br>
+		<button onclick="AddTitle()">Ajouter</button>
+	</div>
+	<div>
+		<h1>Import/Export</h1>
+		<textarea onkeyup="ChangeJSON(event)" name="json-container" id="json-container"></textarea>
+	</div>
+</body>
+</html>

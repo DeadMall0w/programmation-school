@@ -1,0 +1,58 @@
+body{
+    margin-right: 100px;
+}
+
+#playlist-name
+{
+    font-size: 30px;
+    background-color: yellow;
+    padding: 5px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+
+
+.music{
+    background-color: rgb(241, 241, 165);
+    border: 1px solid black;
+    margin-bottom: 0px;
+    height: 80px;
+    position: relative;
+}
+
+.image{
+    max-width: 70px;
+    max-height: 70px;
+    
+    float: left;
+    margin: 7px;
+    clear: both;
+}
+
+
+.cross{
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px 0 0 0;
+    margin: 0px;
+    font-size: 20px;
+}
+
+
+
+
+
+#json-container{
+    width: 90%;
+    height: 200px;
+}
