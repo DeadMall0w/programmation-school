@@ -45,7 +45,7 @@ function UpdateFields(){
         let input;
         if (data[i]["type"] == "string"){
             input = document.createElement("input");
-        }else if (data[i]["type"] == "int"){
+        }else if (data[i]["type"] == "number"){
             input = document.createElement("input");
             input.type="number"; // Provient de https://www.w3schools.com/tags/att_input_type_number.asp
         }else if(data[i]["type"] == "multiple"){
@@ -56,6 +56,8 @@ function UpdateFields(){
                 const option = document.createElement("option");
                 option.value = fields[j];
                 option.textContent = fields[j];
+
+                option.id = i; // permet d'avoir le bon id quand on clique dessus
 
                 input.appendChild(option);
             }
@@ -102,8 +104,9 @@ function UpdateFields(){
             "nom": data[i]["nom"],
             "valeur":input.value
         } 
-        
+
         exportData.push(newExportData);
+        input.classList.add("input");
 
         input.addEventListener('click', function(event) {
             FieldClicked(event);
@@ -124,14 +127,31 @@ function FieldClicked(event){
     //console.log(event);
     if (finishLoading){ // permet de ne pas pouvoir cliquer si les champs n'ont pas fini d'apparaître
 
-        console.log(event.target);
+       // console.log(event.target);
         if (data[event.target.id]["type"] != "multiple"){
             evt = event.target.value;
 //            console.log(evt);
 
             exportData[event.target.id]["valeur"] = evt;
         }else{
-            console.log(event.target.selectedOptions);
+            exportData[event.target.id]["valeur"] ="";
+
+            // Si on selection 2 elements, la variable event retourné est le parent, sinon l'objet cliqué
+            if (event.target.classList.contains("input")){ //https://stackoverflow.com/questions/5898656/check-if-an-element-contains-a-class-in-javascript
+                evt = event.target;
+            }else{
+                
+                evt = event.target.parentElement;
+            }
+
+            console.log(evt);
+            for (let i = 0; i < evt.selectedOptions.length; i++) {
+                const element = evt.selectedOptions[i];
+                // console.log(element.value);
+                exportData[event.target.id]["valeur"] += element.value + ",";
+
+                
+            }
         }
 
     }
