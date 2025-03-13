@@ -1,10 +1,7 @@
-let importTxtArea;
-let container;
+let importTxtArea; // Référence au textearea dans lequel l'utilisateur entre le json
+let container; // Conteneur dans lequel sera ajouté le tableau
 
-// let data = [[{"nom":"Auteur","valeur":"raph"},{"nom":"Durée","valeur":"1"},{"nom":"Catégorie","valeur":"ise,"},{"nom":"Niveau","valeur":"LE1"},{"nom":"Validé","valeur":"1"}],
-// [{"nom":"Auteur","valeur":"martin"},{"nom":"Durée","valeur":"3"},{"nom":"Catégorie","valeur":"ise,sia,"},{"nom":"Niveau","valeur":"LE2"},{"nom":"Validé","valeur":"1"}],
-// [{"nom":"Auteur","valeur":"Adrien"},{"nom":"Durée","valeur":""},{"nom":"Catégorie","valeur":"sia,"},{"nom":"Niveau","valeur":"LE3"},{"nom":"Validé","valeur":"0"}]];
-
+// letiable contenant le json importé
 let data;
 
 // fonction appellé quand la page à fini de charger
@@ -17,12 +14,13 @@ function init(){
 // Fonction appellé par le bouton "import"
 function Import(){
     console.log("IMPORTING DATA...");
-    data = JSON.parse(importTxtArea.value);
+    data = JSON.parse(importTxtArea.value); // tranforme le text en json
 
+    // Met à jour le tableau
     UpdateTable();
 }
 
-
+// Fonction pour mettre à jour le tableau
 function UpdateTable(){
     // Supprimer l'ancien tableau
     while (container.children.length > 0) {
@@ -30,21 +28,19 @@ function UpdateTable(){
     }
 
     // créer un nouveau tableau
-
+    const table = document.createElement("table");
 
     // On commencer par créer le header du tableau
     // C'est à dire la premier ligne en haut qui donne le nom de chaque champ
-    const table = document.createElement("table");
 
-    var keys = Object.keys(data[0]);
-
+    let keys = Object.keys(data[0]); // On suppose que chaque document minute provient de la meme template
     const header = document.createElement("tr");
-    for(var i=0;i<keys.length;i++){
-        var key = keys[i];
-        const headerEl = document.createElement("th");
-        headerEl.textContent = data[0][key]["nom"];
+    for(let i=0;i<keys.length;i++){
+        let key = keys[i];
+        const headerEl = document.createElement("th"); // Créer un champ header
+        headerEl.textContent = data[0][key]["nom"];  // On prend le nom du champs (pas la valeur)
 
-        header.appendChild(headerEl);
+        header.appendChild(headerEl); // On ajoute le champ au header
     }
 
     // une fois le header finit, on l'ajoute au tableau
@@ -52,8 +48,8 @@ function UpdateTable(){
 
     // on va boucler sur chaque document minute
     keys = Object.keys(data);
-    for(var i=0;i<keys.length;i++){
-        var key = keys[i];
+    for(let i=0;i<keys.length;i++){
+        let key = keys[i];
         
         // on créer une nouvelle ligne 
         const line = document.createElement("tr");
