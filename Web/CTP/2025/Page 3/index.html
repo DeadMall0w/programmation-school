@@ -3,28 +3,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>CTP 2025</title>
+	<title>Agrégation de documents minutes</title>
 	<link rel="stylesheet" href="styles.css">
 	<script src="script.js"></script>
-
 </head>
 <body onload="init()">
 <fieldset>
   <legend>Importation du template au format JSON</legend>
   	<label for="import">JSON : </label>
-	<textarea name="import" id="import"></textarea>
-	<br>
+	<textarea name="import" id="import"></textarea> <!-- Champ ou l'utilisateur entre les données-->
+	<br> <!-- Pour que le bouton soit en dessous du textarea-->
 	<button onclick="Import()">Ajouter un document minute</button>
 </fieldset>
-
-		<div id="container""></div>
+	<div id="container""></div> <!-- Conteneur pour les différents champs généré à partir de la template-->
   <fieldset>
 	<legend>Exportation des informations agrégées au format JSON</legend>
 	<button onclick="Export()">Exporter</button>
-	<br>
+	<br> <!-- Pour que le bouton soit au dessous du textarea-->
 	<label for="export">JSON : </label>
-	  <textarea name="export" id="export"></textarea>
+	  <textarea name="export" id="export"></textarea> <!-- Les données exporté seront affiché dans ce textarea-->
   </fieldset>
-	
 </body>
 </html>

@@ -109,7 +109,7 @@ function UpdateFields(){
         // l'id permet de savoir quel est l'indice dans le tableau des valeurs à exporté, afin de mettre à jour les données
         
 
-        // ajout les différents éléments aux container
+        // ajout les différents éléments au container
         container.appendChild(label);
         container.appendChild(input);
 
@@ -121,6 +121,7 @@ function UpdateFields(){
             "valeur":input.value // prend la valeur de base (utile pour les select pour ne pas se retrouver avec des champs vides si on laisse la valeur par défaut)
         } 
 
+        // ajoute les données dans la liste
         exportData.push(newExportData);
         
         // ajoute la classe input, permet de faire des vérifications
@@ -132,7 +133,7 @@ function UpdateFields(){
             event.stopPropagation(); // Permet d'empêcher la propagation vers un parent (non nécessaire dans notre cas)
         });
         
-        // S'abonne au touche du clavier relevé
+        // S'abonne aux touches du clavier relevé
         input.addEventListener('keyup', function(event) {
             FieldClicked(event); // appelle la fonction pour modifier les valeurs
             event.stopPropagation(); // Permet d'empêcher la propagation vers un parent (non nécessaire dans notre cas)
@@ -152,6 +153,7 @@ function FieldClicked(event){
             // Change la valeur dans le tableau, par celle entrée par l'utilisateur
             exportData[event.target.id]["valeur"] = evt;
         }else{
+            // Pour enlever les valeurs précédentes
             exportData[event.target.id]["valeur"] ="";
 
             // Si on selection 2 elements, la variable event retourné est le parent, sinon la variable event est l'objet lui même
@@ -166,7 +168,6 @@ function FieldClicked(event){
                 exportData[event.target.id]["valeur"] += evt.selectedOptions[i].value + ","; // ajout chaque valeur, séparé par une virgule                
             }
         }
-
     }
 }
 
