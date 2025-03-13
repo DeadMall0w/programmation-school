@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>CTP 2025</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+
+</head>
+<body onload="init()">
+<fieldset>
+  <legend>Importation du template au format JSON</legend>
+  	<label for="import">JSON : </label>
+	<textarea name="import" id="import"></textarea>
+	<br>
+	<button onclick="Import()">Ajouter un document minute</button>
+</fieldset>
+
+		<div id="container""></div>
+  <fieldset>
+	<legend>Exportation des informations agrégées au format JSON</legend>
+	<button onclick="Export()">Exporter</button>
+	<br>
+	<label for="export">JSON : </label>
+	  <textarea name="export" id="export"></textarea>
+  </fieldset>
+	
+</body>
+</html>
