@@ -1,20 +1,20 @@
 let importTxtArea; // Référence au textearea dans lequel l'utilisateur entre le json
 let container; // Conteneur dans lequel sera ajouté le tableau
 
-// letiable contenant le json importé
+// la variable contenant le json importé
 let data;
 
-// fonction appellé quand la page à fini de charger
+// fonction appelé quand la page à fini de charger
 function init(){
-    // Récupère les différents élements
+    // Récupère les différents éléments
     importTxtArea = document.getElementById("import");
     container = document.getElementById("container");
 }
 
-// Fonction appellé par le bouton "import"
+// Fonction appelé par le bouton "import"
 function Import(){
     console.log("IMPORTING DATA...");
-    data = JSON.parse(importTxtArea.value); // tranforme le text en json
+    data = JSON.parse(importTxtArea.value); // transforme le text en json
 
     // Met à jour le tableau
     UpdateTable();

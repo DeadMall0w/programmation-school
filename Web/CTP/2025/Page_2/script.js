@@ -119,6 +119,7 @@ function UpdateFields(){
         let newExportData = {
             "nom": data[i]["nom"],
             "valeur":input.value // prend la valeur de base (utile pour les select pour ne pas se retrouver avec des champs vides si on laisse la valeur par défaut)
+            //TODO : Il y a un bug, par défaut un booléen prend la valeur de 1, mais il faudrait mettre la valeur de true ou false
         } 
 
         // ajoute les données dans la liste
@@ -147,8 +148,19 @@ function FieldClicked(event){
     let evt; // permet de rendre plus facile l'accès aux valeur
     if (finishLoading){ // permet de ne pas pouvoir cliquer si les champs n'ont pas fini d'apparaître
 
-        if (data[event.target.id]["type"] != "multiple"){ // Vérifie si ce n'est pas à champs multiples
-            evt = event.target.value;
+        evt = event.target.value;
+        if (data[event.target.id]["type"] == "booléen"){
+
+            // Change la valeur dans le tableau, par celle entrée par l'utilisateur
+            if (evt == 1){
+                exportData[event.target.id]["valeur"] = "true";
+            }else if(evt == 0){
+                exportData[event.target.id]["valeur"] = "false";
+            }else{
+                console.error("Valeur invalide !!");
+                exportData[event.target.id]["valeur"] = evt; // ajout quand meme la valeur
+            }
+        }else if (data[event.target.id]["type"] != "multiple"){ // Vérifie si ce n'est pas à champs multiples
 
             // Change la valeur dans le tableau, par celle entrée par l'utilisateur
             exportData[event.target.id]["valeur"] = evt;
