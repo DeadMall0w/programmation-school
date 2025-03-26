@@ -1,5 +1,7 @@
 <?php
 
+include_once "maLibSQL.pdo.php";
+
 /*
 Dans ce fichier, on définit diverses fonctions permettant de récupérer des données utiles pour notre TP d'identification. Deux parties sont à compléter, en suivant les indications données dans le support de TP
 */
@@ -8,20 +10,8 @@ Dans ce fichier, on définit diverses fonctions permettant de récupérer des do
 /********* PARTIE 1 : prise en main de la base de données *********/
 
 
-// inclure ici la librairie facilitant les requêtes SQL
-include_once "maLibSQL.pdo.php";
-include_once "maLibUtils.php";
+// inclure ici la librairie faciliant les requêtes SQL
 
-
-// echo tprint(listerUtilisateurs("nbl"));
-// echo "tous les utilisateurs blacklist : ";
-// echo tprint(listerUtilisateurs("bl"));
-
-// interdireUtilisateur("Adrien");
-// echo "";
-// // echo tprint(listerUtilisateurs("bl"));
-// echo tprint(verifUserBdd("Adrien", "123"));
-// echo tprint(verifUserBdd("Adrien", "1234"));
 
 function listerUtilisateurs($classe = "both")
 {
@@ -33,31 +23,45 @@ function listerUtilisateurs($classe = "both")
 	// Lorsque la variable $classe vaut "both", elle renvoie tous les utilisateurs
 	// Lorsqu'elle vaut "bl", elle ne renvoie que les utilisateurs blacklistés
 	// Lorsqu'elle vaut "nbl", elle ne renvoie que les utilisateurs non blacklistés
-	$where = "WHERE 1";
-	if($classe == "bl"){
-		$where = "WHERE blacklist = 1";
-	}else if($classe == "nbl"){
-		$where = "WHERE blacklist = 0";
+	
+	$where = "TRUE";
+	if ($classe == "bl") {
+	  $where = "blacklist";
 	}
-		
-	$res = parcoursRs(SQLSelect("SELECT id,pseudo,blacklist,connecte,couleur FROM users $where;"));
-	
-	
-	return $res; 
+	if ($classe == "nbl") {
+	  $where = "NOT blacklist";
+	}
+	$resultat = parcoursRs(SQLSelect("
+	  SELECT id,
+	         pseudo,
+	         blacklist,
+	         connecte,
+	         couleur
+	  FROM users
+	  WHERE $where;
+	"));
+  return $resultat;
 }
 
 
 function interdireUtilisateur($idUser)
 {
 	// cette fonction affecte le booléen "blacklist" à vrai pour l'utilisateur concerné 
-	SQLSelect("UPDATE users SET users.blacklist = 1 WHERE users.id = \"$idUser\";");
+  return SQLUpdate("
+    UPDATE users
+    SET blacklist = TRUE
+    WHERE id = '$idUser';
+  ");
 }
 
 function autoriserUtilisateur($idUser)
 {
 	// cette fonction affecte le booléen "blacklist" à faux pour l'utilisateur concerné 
-	SQLSelect("UPDATE users SET users.blacklist = 0 WHERE users.id = \"$idUser\";");
-
+  return SQLUpdate("
+    UPDATE users
+    SET blacklist = FALSE
+    WHERE id = '$idUser';
+  ");
 }
 
 function verifUserBdd($login,$passe)
@@ -69,7 +73,6 @@ function verifUserBdd($login,$passe)
 
 	$SQL="SELECT id FROM users WHERE pseudo='$login' AND passe='$passe'";
 
-	echo SQLGetChamp($SQL);
 	return SQLGetChamp($SQL);
 	// si on avait besoin de plus d'un champ
 	// on aurait du utiliser SQLSelect
@@ -80,7 +83,6 @@ function isAdmin($idUser)
 {
 	// vérifie si l'utilisateur est un administrateur
 	$SQL ="SELECT admin FROM users WHERE id='$idUser'";
-	
 	return SQLGetChamp($SQL); 
 }
 
@@ -103,6 +105,13 @@ function deconnecterUtilisateur($idUser)
 
 function changerCouleur($idUser,$couleur="black")
 {
+	echo "CHANGEMENT DE COULEUR !";
+	
+	SQLUpdate("
+    UPDATE users
+    SET couleur = \"$couleur\"
+    WHERE id = '$idUser';
+  ");
 	// cette fonction modifie la valeur du champ 'couleur' de l'utilisateur concerné
 }
 

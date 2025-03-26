@@ -1,48 +1,8 @@
-<html>
-<head>
-<style>
-body {
-background-color: linen;
-}
-h1 {
-color: maroon;
-margin-left: 40px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-</style>
-</head>
-
 <?php
 
 
 /*
-Ce fichier d�finit diverses fonctions permettant de faciliter la production de mises en formes complexes : 
+Ce fichier définit diverses fonctions permettant de faciliter la production de mises en formes complexes : 
 tableaux, formulaires, ...
 */
 
@@ -104,51 +64,58 @@ function mkTable($tabData,$listeChamps=false)
 
 function mkSelect($nomChampSelect, $tabData,$champValue, $champLabel,$selected=false,$champLabel2=false)
 {
-	// Produit un menu d�roulant portant l'attribut name = $nomChampSelect
-	// TNE: Si cette variable se termine par '[]', il faudra affecter l'attribut multiple � la balise select
+	// Produit un menu déroulant portant l'attribut name = $nomChampSelect
+	// TNE: Si cette variable se termine par '[]', il faudra affecter l'attribut multiple à la balise select
 
-	// Produire les options d'un menu d�roulant � partir des donn�es pass�es en premier param�tre
-	// $champValue est le nom des cases contenant la valeur � envoyer au serveur
-	// $champLabel est le nom des cases contenant les labels � afficher dans les options
-	// $selected contient l'identifiant de l'option � s�lectionner par d�faut
-	// si $champLabel2 est d�fini, il indique le nom d'une autre case du tableau 
-	// servant � produire les labels des options
+	// Produire les options d'un menu déroulant à partir des données passées en premier paramètre
+	// $champValue est le nom des cases contenant la valeur à envoyer au serveur
+	// $champLabel est le nom des cases contenant les labels à afficher dans les options
+	// $selected contient l'identifiant de l'option à sélectionner par défaut
+	// si $champLabel2 est défini, il indique le nom d'une autre case du tableau 
+	// servant à produire les labels des options
+	echo "<select name=\"$nomChampSelect\">\n";
+	foreach ($tabData as $u) {
+	  $strSelected = "";
+	  if ($u[$champValue] == $selected) {
+	    $strSelected = "selected=\"selected\"";
+	  }
+	  echo "  <option value=\"$u[$champValue]\" $strSelected>";
+	  echo "$u[$champLabel]";
+	  if ($champLabel2) {
+	    echo " ($u[$champLabel2])";
+	  }
+	  echo "</option>\n";
+	}
+	echo "</select>\n";
 }
 
 function mkForm($action="",$method="get")
 {
-	// Produit une balise de formulaire NB : penser � la balise fermante !!
+	// Produit une balise de formulaire NB : penser à la balise fermante !!
+	echo "<form action=\"$action\" method=\"$method\">\n";
 }
 function endForm()
 {
 	// produit la balise fermante
+	echo "</form>\n";
 }
 
 function mkInput($type,$name,$value="")
 {
 	// Produit un champ formulaire
+	mkRadioCb($type, $name, $value, false);
+	//echo "<input type=\"$type\" name=\"$name\" value=\"$value\" />\n";
 }
 
 function mkRadioCb($type,$name,$value,$checked=false)
 {
 	// Produit un champ formulaire de type radio ou checkbox
-	// Et s�lectionne cet �l�ment si le quatri�me argument est vrai
+	// Et sélectionne cet élément si le quatrième argument est vrai
+  if ($checked) {
+    $strChecked = "checked=\"checked\"";
+  } else {
+    $strChecked = "";
+  }
+	echo "<input type=\"$type\" name=\"$name\" value=\"$value\" $strChecked />\n";
 }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

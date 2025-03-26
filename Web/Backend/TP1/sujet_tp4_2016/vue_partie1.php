@@ -1,29 +1,61 @@
+<style>
+body {
+background-color: linen;
+}
+h1 {
+color: maroon;
+margin-left: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+</style>
+
 <?php
 // Ce fichier permet de tester les fonctions développées dans le fichier controleur.php (première partie)
 
 include_once "modele.php"; 
 include_once "maLibUtils.php"; 
-include_once "maLibForms.php"; 
+include_once "maLibForms.php";
 
-
-//* TRAITER LES ACTIONS DEMANDE
-// valider("idUser");
-//! NE PAS UTILISER LE CODE SUIVANT A CAUSE DES IN
-// $action = $_GET['action'];
-// $idUser = $_GET['idUser'];
-
-$action = valider('action');
-$idUser = valider('idUser');
-
-if ($action == "Interdire"){
-	echo "Interdiction...";
-	interdireUtilisateur("$idUser");
-}else if($action == "Autoriser"){
-	echo "autorisation...";	
-	autoriserUtilisateur("$idUser");
+// Traiter l'action demandée
+$action = valider('action', 'GET');
+$idUser = valider('idUser', 'GET');
+$col = valider('idColor', 'GET');
+if ($action == "Interdire") {
+  interdireUtilisateur($idUser);
 }
-
-
+if ($action == "Autoriser") {
+  autoriserUtilisateur($idUser);
+}
+if ($action == "changerCouleur"){
+	echo "changement couleur !!";
+	changerCouleur($idUser, $col);
+}
 ?>
 
 <h1>Administration du site</h1>
@@ -33,40 +65,14 @@ if ($action == "Interdire"){
 <?php
 
 echo "liste des utilisateurs autorises de la base :"; 
-$users = listerUtilisateurs("both");
-?>
-
-<?php
-foreach ($users as $dataUser)
-{
-	echo "<p";
-	//echo "style=\"color:red;\";
-	if ($dataUser['blacklist']){
-		echo " style=\"color:red;\"";
-	}
-
-	// echo $dataUser['blacklist'];
-
-	echo ">";
-	$nom = $dataUser["pseudo"];
-	echo  "$nom";
-	echo "</p>";
-}
-
-?>
-
-
-<?php
-
-// tprint($users);	// préférer un appel à mkTable($users);
+$users = listerUtilisateurs("nbl");
+mkTable($users, ['pseudo', 'couleur', 'connecte']);
 
 echo "<hr />";
 
 echo "liste des utilisateurs non autorises de la base :"; 
-$users = listerUtilisateurs("");
-
-echo "<h1>MK TABLE</h1>";
-mkTable($users, ["pseudo","id"]);	// préférer un appel à mkTable($users);
+$users = listerUtilisateurs("bl");
+mkTable($users, ['pseudo', 'couleur', 'connecte']);
 ?>
 
 
@@ -74,29 +80,23 @@ mkTable($users, ["pseudo","id"]);	// préférer un appel à mkTable($users);
 
 <h2>Changement de statut des utilisateurs</h2>
 
-<form>
-
-<select name="idUser">
 <?php
-// echo "value=\"$idUser\"";
+
 $users = listerUtilisateurs("both");
+mkForm();
+  mkSelect("idUser", $users, "id", "pseudo", $idUser, "couleur");
+  mkInput("submit", "action", "Interdire");
+  mkInput("submit", "action", "Autoriser");
 
-// préférer un appel à mkOptions($users, ...)
-foreach ($users as $dataUser)
-{
-	if ($idUser == $dataUser["id"]){
-		echo "<option value=\"$dataUser[id]\" selected=\"selected\">";
-	}else{
-		echo "<option value=\"$dataUser[id]\">";
-	}
 
-	echo  $dataUser["pseudo"];
-	echo "</option>"; 
-}
+$color = [
+	["nom" => "bleu", "valeur" => "blue"],
+	["nom" => "rouge", "valeur" => "red"],
+	["nom" => "vert", "valeur" => "green"]
+];
+
+  mkSelect("idColor", $color, "valeur", "nom", $col);
+  mkInput("submit", "action", "changerCouleur");
+endForm();
 
 ?>
-</select>
-
-<input type="submit" name="action" value="Interdire" />
-<input type="submit" name="action" value="Autoriser" />
-</form>
