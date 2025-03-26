@@ -37,10 +37,13 @@ tr:hover {
 
 <?php
 // Ce fichier permet de tester les fonctions développées dans le fichier controleur.php (première partie)
+session_start();
 
 include_once "modele.php"; 
 include_once "maLibUtils.php"; 
 include_once "maLibForms.php";
+include_once "maLibSecurisation.php";
+
 
 // Traiter l'action demandée
 $action = valider('action', 'GET');
@@ -54,7 +57,11 @@ if ($action == "Autoriser") {
 }
 if ($action == "changerCouleur"){
 	echo "changement couleur !!";
-	changerCouleur($idUser, $col);
+}
+if ($action == "déconnexion"){
+	// echo "changement couleur !!";
+	session_destroy();
+	rediriger("login.php");
 }
 ?>
 
@@ -99,4 +106,15 @@ $color = [
   mkInput("submit", "action", "changerCouleur");
 endForm();
 
+?>
+
+<h2> Connexion ! </h2> 
+<?php
+tprint($_SESSION);
+
+mkForm();
+mkInput("submit", "action", "déconnexion");
+endForm();
+
+// verifUser("Adrien", "123");
 ?>

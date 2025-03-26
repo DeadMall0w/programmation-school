@@ -86,6 +86,12 @@ function isAdmin($idUser)
 	return SQLGetChamp($SQL); 
 }
 
+function getPseudo($idUser)
+{
+	// vérifie si l'utilisateur est un administrateur
+	$SQL ="SELECT pseudo FROM users WHERE id='$idUser'";
+	return SQLGetChamp($SQL); 
+}
 /********* PARTIE 2 *********/
 
 function mkUser($pseudo, $passe,$admin=false,$couleur="black")
@@ -105,8 +111,6 @@ function deconnecterUtilisateur($idUser)
 
 function changerCouleur($idUser,$couleur="black")
 {
-	echo "CHANGEMENT DE COULEUR !";
-	
 	SQLUpdate("
     UPDATE users
     SET couleur = \"$couleur\"
