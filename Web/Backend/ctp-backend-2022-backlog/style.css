@@ -1,0 +1,32 @@
+
+.white{
+    background-color: white;
+    border: 1px solid gray;
+
+}
+
+
+.none{
+    border:none;
+}
+
+.orange{
+    background-color: orange;
+    border: 1px solid gray;
+
+}
+
+.green{
+    border: 1px solid gray;
+    background-color: green;
+
+}
+
+
+
+.black{
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+
+}
