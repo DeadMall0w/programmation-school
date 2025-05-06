@@ -1,0 +1,33 @@
+
+>>BERQUIER<<
+
+--->Votre fichier enigma a bien ete cree. Tapez donc   ls -l    pour le constater
+ --->Ce fichier contient des int.  
+
+- Q1 combien d'int sont dans votre fichier ?
+
+- Q2 calculez La SOMME des int de rang impair (1 , 3 , 5 , etc...) :
+
+>>>donc le premier + le troisieme + le cinquieme + ...  
+
+- Q3 identifiez les int de rang pair (2 , 4 , 6 , 8 et 10) qui sont des codes ascii de lettres MAJUSCULES. Vous obtiendrez ainsi une chaine de 5 caracteres
+--->Vous reporterez vos réponses dans le quizz sur moodle
+
+===>Si le fichier enigma n'apparaît pas, informez de suite votre enseignant
+
+
+BONNE CHANCE
+
+
+
+
+Il y a 607 int
+
+somme : 23283
+
+
+nums F 
+nums E 
+nums E 
+nums A 
+nums B

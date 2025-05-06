@@ -1,0 +1,58 @@
+
+CTP du 19 mai 2022
+PARTIE 1
+SUJET de l'EXERCICE 2
+
+
+Le fichier resultatsTOUR.txt est issu du site data.gouv.fr et contient tous les résultats du premier tour de l'élection présidentielle du 10 avril 2022.
+Vous pouvez ouvrir ce fichier avec un tableur et constater que le nombre de lignes et de colonnes est énorme. (le séparateur de colonne est l'espace)
+
+On y trouve le nombre de voix de chaque candidat, departement par departement, circonscription par circonscription, ville par ville, bureau par bureau ...
+
+
+
+REMARQUE : dans cet exercice, nous n'utiliserons que les caracteres sans accent, ni cédille.
+
+
+
+
+Commencez par compiler lire.c  avec gcc lire.c -o lire
+
+puis lancez ./lire
+
+Cet executable lit et affiche chaine par chaine, le fichier resultatsTOUR.txt. Cela prend un peu de temps et pour éviter d'en perdre trop, nous vous conseillons désormais de mettre le printf en commentaire. Le gain de temps sera appréciable.
+
+
+
+
+QUESTION 1 : En utilisant argc et argv du main, modifiez lire.c pour obtenir une capture d'écran similaire à figure1.png
+
+Vous afficherez le nombre total de votes pour 2 candidats dont les noms seront passés en parametres. Regardez la figure1.png pour mieux comprendre. (les noms sont en MAJUSCULES)
+C'est le nombre de votes sur toute la France (donc sur tout le fichier).
+
+
+Vous rendrez une figure nommée <VOTRE_NOM>1.png qui ressemble à figure1.png. L'ordre des candidats passés en ligne de commande sera identique à celui de la figure1.png
+(un autre format que png convient : jpg par exemple)
+
+
+MATCH1 : MACRON LE_PEN
+MATCH2 : POUTOU ARTHAUD
+MATCH3 : HIDALGO JADOT
+MATCH3 : LASSALLE MELENCHON
+MATCH5 : PECRESSE ZEMMOUR
+
+
+Remplacez mon nom par le vôtre
+
+QUESTION 2 : Affichage par ville
+Toujours en utilisant argc et argv du main, modifiez lire.c pour obtenir une capture d'écran similaire à figure2.png/figure3.png
+Le nom d'une ville est passé en argument à l'executable ./lire
+
+
+Vous rendrez une figure nommée <VOTRE_NOM>2.png qui ressemble à figure3.png (pour la ville de Lens).
+
+
+BONNE CHANCE
+
+N'oubliez pas le QUIZZ 
+
