@@ -19,9 +19,9 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php")
 - Changer la couleur selon l'avancement
 
 */
+// $filtres = "";
 
-
-$taches = ListeTaches(); // fonction présente dans modele et qui fait une requête à la base de donnée
+$taches = ListeTaches($filtres); // fonction présente dans modele et qui fait une requête à la base de donnée
 
 foreach ($taches as $index => $tache) {
   if ($tache["statut"] == 0){
@@ -34,8 +34,9 @@ foreach ($taches as $index => $tache) {
     mkDiv($tache["nom"] . " - abandonné", "black");
   }
 }
-// $taches = ["nom" => "Alice", "age" => 25];
 
-// tprint($taches);
+tprint($taches);
+
+
 ?>
 

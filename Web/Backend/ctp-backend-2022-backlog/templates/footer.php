@@ -13,7 +13,6 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php")
 <div class="clearFix"></div>
 
 </div>
-
 </div>
 
 <div id="footer">

@@ -21,8 +21,9 @@
     switch($action)
     {
       // TODO
-      case 'TODO' :
+      case 'afficherTache' :
         // Traitements métier...
+        
       break;
       
       // TODO
