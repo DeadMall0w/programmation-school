@@ -62,6 +62,14 @@ Les formulaires de toutes les vues générées enverront leurs données vers la 
 ?>
 
 
+<script>
+function toggleDescription(id) {
+    const desc = document.getElementById(id);
+    desc.style.display = (desc.style.display === "none") ? "block" : "none";
+}
+</script>
+
+
 
 
 

@@ -63,7 +63,6 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 			echo mkHeadLink("Se connecter","login",$view); 
 		else {
 			// TODO
-			echo mkHeadLink("voir les cycles","cycles",$view); 
 		}
 		?>
         </ul>

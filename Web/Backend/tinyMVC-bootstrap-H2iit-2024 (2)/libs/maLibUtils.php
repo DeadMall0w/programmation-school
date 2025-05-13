@@ -104,7 +104,6 @@ function tprint($tab)
 
 function rediriger($url,$tabQS="")
 {
-	// die($tabeQS);
 	$qs =""; 
 	// NB : tabQS est un tableau associatif 
 
@@ -114,7 +113,7 @@ function rediriger($url,$tabQS="")
 			$qs .= "$nom=" . urlencode($val) . "&";
 		}
 	}
-
+	
 	header("Location:$url?" . rtrim($qs, "&") ); // envoi par la méthode GET
 	die(""); // interrompt l'interprétation du code 
 }

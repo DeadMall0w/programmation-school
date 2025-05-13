@@ -296,24 +296,6 @@ function br() {
 function hr() {
 	echo "<hr />\n"; 
 }
-
-function mkDivSimple($text){
-	echo "<div >" . $text . "</div>"; 
-}
-
-function mkDiv($text, $description = "Description par défaut", $id = null) {
-    static $compteur = 0;
-    $id = $id ?? "tache_" . $compteur++;
-    
-    echo <<<HTML
-<div onclick="toggleDescription('$id')" style="cursor: pointer; padding: 10px; border: 1px solid #ccc; margin-bottom: 5px;">
-    $text
-    <div id="$id" class="description" style="display: none; margin-top: 5px; color: gray;">
-        $description
-    </div>
-</div>
-HTML;
-}
 ?>
 
 

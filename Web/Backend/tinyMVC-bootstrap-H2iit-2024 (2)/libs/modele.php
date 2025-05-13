@@ -43,54 +43,11 @@ function isCoach($idUser)
 // TODO : D'autres fonctions peuvent être ajoutées à la suite
 
 
-function listerCycles(){
-	$sql = "
-    SELECT * FROM Cycles
-	;";
-  //echo $sql;
-  return parcoursRs(SQLSelect($sql));
-}
 
 
-function recupCycleData($id){
-	
-	// attention au injection SQL !!!
-	
-	$sql = "
-    SELECT * FROM Cycles WHERE id=" . $id .
-	";";
-  return parcoursRs(SQLSelect($sql));
-
-}
 
 
-function GetCoachName($id)
-{
-	$SQL="SELECT pseudo FROM Users WHERE id=". $id .";";
-
-	return SQLGetChamp($SQL);
-}
-
-function getCompositionCycles($idCycle){
-	$SQL="SELECT * FROM Composition_Cycles WHERE idCycle=". $idCycle .";";
-	// die($SQL);
-	return parcoursRs(SQLSelect($SQL));
-}
-
-function getExercice($id){
-	$SQL="SELECT * FROM Exercices WHERE id=". $id .";";
-
-	return parcoursRs(SQLSelect($SQL));
-
-}
 
 
-function AjouterCycle($id, $nom, $description, $idCoach, $repetition, $repos1, $repos2){
-	$SQL = "INSERT INTO Cycles 
-(`id`, `nom`, `description`, `idCoach`, `repetitions`, `reposEntreCycles`, `reposEntreExercices`)
-VALUES ('$id', '$nom', '$description', '$idCoach', '$repetition', '$repos1', '$repos2')";
 
-
-	SQLUpdate($SQL);
-}
 ?>

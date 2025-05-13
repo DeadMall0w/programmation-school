@@ -1,8 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-
 session_start();
 
 /*
@@ -64,14 +60,6 @@ Les formulaires de toutes les vues générées enverront leurs données vers la 
 
 	
 ?>
-
-
-<script>
-function toggleDescription(id) {
-    const desc = document.getElementById(id);
-    desc.style.display = (desc.style.display === "none") ? "block" : "none";
-}
-</script>
 
 
 

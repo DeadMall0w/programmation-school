@@ -16,7 +16,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 <!-- **** H E A D **** -->
 <head>	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>H'2i'it</title>
+	<title>Minute</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 
 	<!-- Liaisons aux fichiers css de Bootstrap -->
@@ -51,7 +51,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
         </button>
-	<a class="navbar-brand" href="index.php?view=accueil">H'2i'it</a>
+	<a class="navbar-brand" href="index.php?view=accueil">Minute</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -63,7 +63,6 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 			echo mkHeadLink("Se connecter","login",$view); 
 		else {
 			// TODO
-			echo mkHeadLink("voir les cycles","cycles",$view); 
 		}
 		?>
         </ul>

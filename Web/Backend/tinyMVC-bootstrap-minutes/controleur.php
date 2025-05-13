@@ -9,18 +9,17 @@ session_start();
 
 	// $qs = "";
 	$qs = $_GET;
-
-	// $dataQS = array($qs); 
+	$dataQS = array(); 
 	
 	// voir les entetes HTTP venant du client : 
 	// tprint($_SERVER);
 	// die("");
 
-
 	if ($action = valider("action"))
 	{
 		ob_start ();
 		echo "Action = '$action' <br />";
+		// ATTENTION : le codage des caractères peut poser PB si on utilise des actions comportant des accents... 
 		// A EVITER si on ne maitrise pas ce type de problématiques
 
 		// Un paramètre action a été soumis, on fait le boulot...
@@ -56,32 +55,34 @@ session_start();
 					}
 				}
 			break;
+			case "Supprimer champ":
+				//TODO : RAJOUTER DES SECURITE POUR NE PAS QUE TOUT LE MONDE PUISSE UTILISER CETTE REQUETE
+				if ($champID = valider("champID", "GET")){
+					if ($champID <= 2){
+						// On ne peut pas supprimer
+						//TODO : prevenir l'utilsateur que ce n'est pas possible
+					}else{
+						// TODO : Ramener à la bonne vue
+						// $qs["view"] = "editionTemplate"; 
+						// $qs["champID"] = $champID; 
 
-			case "AjouterCycle":
-				if (
-					($id = valider("idCycle", "GET")) &&
-					($nom = valider("nom", "GET")) &&
-					($description = valider("description", "GET")) &&
-					($rep = valider("rep", "GET")) &&
-					($repEntreCycle = valider("repEntreCycle", "GET")) &&
-					($idCoach = valider("idCoach", "GET")) &&
-					($repEntreExo = valider("repEntreExo", "GET"))
-				) {
-				
-					echo "<pre>";
-					echo "idCycle         : $id\n";
-					echo "nom             : $nom\n";
-					echo "description     : $description\n";
-					echo "répétition      : $rep\n";
-					echo "rep entre cycle : $repEntreCycle\n";
-					echo "rep entre exo   : $repEntreExo\n";
-					echo "</pre>";
-								
-					$qs["view"] = "cycles"; 
-					AjouterCycle($id, $nom, $description, $idCoach, $rep, $repEntreCycle, $repEntreExo);
+						supprimerChamp($champID);
+					}
 				}
-				break;
 
+				break;
+			case "Ajouter champ":
+				//TODO : RAJOUTER DES SECURITE POUR NE PAS QUE TOUT LE MONDE PUISSE UTILISER CETTE REQUETE
+				if (($projetID = valider("projetID", "GET")) &&
+					($nomChamp = valider("nomChamp", "GET")) &&
+					($type = valider("type", "GET")) 
+				){
+					// TODO : Ramener à la bonne vue
+					ajouterChamp($projetID, $type, $nomChamp);
+
+				}
+
+				break;
 			case 'Logout' :
 			case 'logout' :
 				session_destroy();
