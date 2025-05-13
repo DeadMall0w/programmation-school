@@ -1,0 +1,23 @@
+/* Pour que les textes area soit plus grand par défaut */
+textarea{
+    width: 300px;
+    height: 100px;
+}
+
+/* Pour tous les boutons, laisser un petit espace au dessus et en dessous */
+button{
+    margin: 10px 0 10px 0;
+}
+
+
+fieldset{
+    border: solid 1px rgb(184, 184, 184);
+}
+
+label {
+    margin: 10px;
+}
+
+select{
+    width: 300px;
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Affichage des documents minutes</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body onload="init()">
+<fieldset>
+  <legend>Informations au format JSON</legend>
+  	<label for="import">JSON : </label>
+	<textarea name="import" id="import"></textarea>
+	<br> <!-- Permet que le bouton soit en dessous du textarea-->
+	<button onclick="Import()">Importer</button>
+</fieldset>
+
+  <fieldset>
+	<legend>Donnée agrégées</legend>
+	<!-- Conteneur dans lequel nous allons rajouter le tableau -->
+	<div id="container""></div> 
+  </fieldset>
+	
+</body>
+</html>
