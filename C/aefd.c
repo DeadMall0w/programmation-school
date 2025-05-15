@@ -81,7 +81,7 @@ int main(void) {
         etat = matrix[etat][type];
 
         // printf("nv etat :  %d\n\n", etat);
-        printf("etat :  %d\n", etat);
+        // printf("etat :  %d\n", etat);
 
 
         if (etat == 10) {

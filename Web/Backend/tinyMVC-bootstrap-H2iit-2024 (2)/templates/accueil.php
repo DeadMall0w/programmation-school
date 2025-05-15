@@ -14,7 +14,7 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php")
 	die("");
 }
 
-
+?>
 
 
     <div class="page-header">

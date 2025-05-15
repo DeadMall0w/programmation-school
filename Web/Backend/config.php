@@ -6,8 +6,8 @@
 //     (un dossier au-dessus du dossier contenant index.php et controleur.php)
 
 $BDD_host="localhost";
-$BDD_user="f1";
+$BDD_user="raf";
 $BDD_password="123"; 
-$BDD_base="H2IT";
+$BDD_base="CTP_2024";
 
 ?>
