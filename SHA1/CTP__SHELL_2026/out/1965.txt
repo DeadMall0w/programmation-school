@@ -1,0 +1,18 @@
+1:Nantes:43:21:12793:1/8 f
+2:Bordeaux:41:11:11936:1/32 f
+3:Valenciennes:40:22:8100:1/4 f
+4:Rennes:38:19:11224:vainqueur
+5:Strasbourg:38:10:11200:1/4 f
+6:Lyon:36:-4:7200:1/32 f
+7:St-Etienne:35:5:9428:1/2 f
+8:Lens:35:-6:9164:1/16 f
+9:Lille:34:9:9746:1/16 f
+10:Sochaux:34:4:6524:1/8 f
+11:Toulouse:33:-2:8173:-
+12:Monaco:33:-4:2600:1/16 f
+13:Angers:31:-7:6100:1/32 f
+14:Sedan:30:-7:5100:finale
+15:Stade Francais:30:-12:10548:1/2 f
+16:Rouen:30:-17:9355:1/8 f
+17:Nimes:29:-16:8300:1/32 f
+18:Toulon:22:-26:8529:1/4 f

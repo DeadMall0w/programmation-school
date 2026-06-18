@@ -1,0 +1,41 @@
+[
+{
+	"name": "Paul",
+	"age": 40,
+	"height": 190,
+	"hobbies": [
+		"reading",
+		"movies"
+	],
+	"score": {
+		"Gamma": 12,
+		"Alpha": 1,
+		"Tango": 2
+	}
+},
+{
+	"name": "Peter",
+	"age": 25,
+	"height": 172,
+	"hobbies": [
+		"tv",
+		"movies"
+	],
+	"score": {
+		"Alpha": 13,
+		"Tango": 26
+	}
+},
+{
+	"name": "John",
+	"age": 45,
+	"height": 181,
+	"hobbies": [
+		"hockey"
+	],
+	"score": {
+		"Gamma": 5,
+		"Alpha": 87
+	}
+}
+]

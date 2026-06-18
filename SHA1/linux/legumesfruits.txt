@@ -1,0 +1,34 @@
+Legumes:Fruits
+Fenouil:Pomme
+Radis:
+Poireau:
+Carotte:Coing
+Chou-chinois:Kiwi
+Tomate:
+Chou-rave:Mandarine
+Petit oignon blanc:Fraise des bois
+Brocoli:Citron
+Catalonia:Figue fraiche
+Oignon:Raisin
+Panais:Tomate
+Chou-fleur:Litchi
+Cima di Rapa:Mangue
+Betterave rouge:Banane
+Citrouille:Marron
+Potiron:
+Celeri:Noix
+Chou blanc:Fraise
+Topinambour:
+Poivron:
+Bette:Avocat
+Epinard:Poire
+Radis long:
+Chou de Bruxelles:Fruit de la passion
+Mais:Quetsche
+Laitue romaine:Prune
+Salsifis:
+Pomme de terre:
+Courge:Noisette
+Chou frise:Groseille
+Celeri branche:Papaye
+Chou rouge:Kaki

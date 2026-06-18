@@ -1,0 +1,8 @@
+NETWORK ID     NAME                            DRIVER    SCOPE
+c1177505053f   bridge                          bridge    local
+06e115af80b4   host                            host      local
+aaa85da4ca11   labpostfixctp_internet-access   bridge    local
+65f2e34b125e   labpostfixctp_private-net-0     bridge    local
+b9c0068129ec   labpostfixctp_private-net-1     bridge    local
+91526595a240   labpostfixctp_private-net-2     bridge    local
+9c28afba2d1b   none                            null      local

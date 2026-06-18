@@ -1,0 +1,2326 @@
+[
+    {
+        "Id": "1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27",
+        "Created": "2024-04-06T09:33:47.431252843Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2082,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:51.269122405Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2c13fa1ee903fb5779409ccbb01bf418350d3860752af85d526ca29c720df891",
+        "ResolvConfPath": "/var/lib/docker/containers/1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27/hostname",
+        "HostsPath": "/var/lib/docker/containers/1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27/hosts",
+        "LogPath": "/var/lib/docker/containers/1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27/1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27-json.log",
+        "Name": "/labpostfixctp-client-net-0-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-0",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/9d78249bcb883ad862a6aa828e7b00c9d7d945500a79b3075c5709f3b684d5c1-init/diff:/var/lib/docker/overlay2/3ayp04zejiqpjut1gz7f6gtev/diff:/var/lib/docker/overlay2/ytzb8g94f84u27f4suchkno3y/diff:/var/lib/docker/overlay2/dysf1mh88eamkkncdv2d16hbg/diff:/var/lib/docker/overlay2/5p1tnu123qoundlmb7trduayk/diff:/var/lib/docker/overlay2/10qwvayuaie2sycw1crinsr07/diff:/var/lib/docker/overlay2/jkatba6l2ghom4e5n7m2k3543/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/9d78249bcb883ad862a6aa828e7b00c9d7d945500a79b3075c5709f3b684d5c1/merged",
+                "UpperDir": "/var/lib/docker/overlay2/9d78249bcb883ad862a6aa828e7b00c9d7d945500a79b3075c5709f3b684d5c1/diff",
+                "WorkDir": "/var/lib/docker/overlay2/9d78249bcb883ad862a6aa828e7b00c9d7d945500a79b3075c5709f3b684d5c1/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "client-net-0",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "alpine-mutt",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:00:02",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "877e7c8811d66b75d252bc7d86c0909bd7f41fda78d64ff6ffff07ab803def7a",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:2c13fa1ee903fb5779409ccbb01bf418350d3860752af85d526ca29c720df891",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "client-net-0",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "67999a44711c83ff7498b8e5c2c46b8374fe922b51d6c9035db9e462429c56bb",
+            "SandboxKey": "/var/run/docker/netns/67999a44711c",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-0": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.0.2"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-client-net-0-1",
+                        "client-net-0",
+                        "1db61cbe5f64"
+                    ],
+                    "MacAddress": "02:42:0a:01:00:02",
+                    "NetworkID": "65f2e34b125e0659c8d92885cfd53a64c656459b9251abbf56727ba38d95c81f",
+                    "EndpointID": "38a50d40d71708a58e71147efee767aba62decb152bd9a4bbe2297c0b8125cad",
+                    "Gateway": "10.1.0.1",
+                    "IPAddress": "10.1.0.2",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-client-net-0-1",
+                        "client-net-0",
+                        "1db61cbe5f64"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6",
+        "Created": "2024-04-06T09:33:47.415069877Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1903,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:50.878372457Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:548abd6367579ea11c1ee75b764ab8c149b6094547e7f32b143fa2666f751bdc",
+        "ResolvConfPath": "/var/lib/docker/containers/7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6/hostname",
+        "HostsPath": "/var/lib/docker/containers/7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6/hosts",
+        "LogPath": "/var/lib/docker/containers/7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6/7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6-json.log",
+        "Name": "/labpostfixctp-mail-net-0-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/postfix-net-0:/etc/postfix:rw",
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dovecot-net-0:/etc/dovecot:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-0",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/f9ee9e5b05f5a478d7787f3ac9f102f17c339715038272bcc8b06900f134d31b-init/diff:/var/lib/docker/overlay2/s6s4xw743o1k26exdhczandlj/diff:/var/lib/docker/overlay2/zr2w8bzye9oirtmzyewzjs0l3/diff:/var/lib/docker/overlay2/yjqmxo1zryjx9vllhmsguiuqy/diff:/var/lib/docker/overlay2/vprwf217b1i7svv3e55pavz1u/diff:/var/lib/docker/overlay2/qjnk3o2qzabta2c0f7chjya24/diff:/var/lib/docker/overlay2/ya5pgzw6e5c0svtf07ing7uli/diff:/var/lib/docker/overlay2/jkal46d55gx6w7hr4dqpnz9na/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/f9ee9e5b05f5a478d7787f3ac9f102f17c339715038272bcc8b06900f134d31b/merged",
+                "UpperDir": "/var/lib/docker/overlay2/f9ee9e5b05f5a478d7787f3ac9f102f17c339715038272bcc8b06900f134d31b/diff",
+                "WorkDir": "/var/lib/docker/overlay2/f9ee9e5b05f5a478d7787f3ac9f102f17c339715038272bcc8b06900f134d31b/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/postfix-net-0",
+                "Destination": "/etc/postfix",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dovecot-net-0",
+                "Destination": "/etc/dovecot",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "9a9dcb16a50ff1b0b78eb5cb467f649c8704419edadfcd407905a2a69b1d2854",
+                "Source": "/var/lib/docker/volumes/9a9dcb16a50ff1b0b78eb5cb467f649c8704419edadfcd407905a2a69b1d2854/_data",
+                "Destination": "/sys/fs/cgroup",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "mail-net-0",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "postfix-alpine",
+            "Volumes": {
+                "/sys/fs/cgroup": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:00:19",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "4cf8511702fea7be20516a7ad52ec04b4d96bf367f83553c89795076fdd7c85f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:548abd6367579ea11c1ee75b764ab8c149b6094547e7f32b143fa2666f751bdc",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "mail-net-0",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "b60f4ee1e97cee2329ba86364551dbae0aa5fe806dbccfade05976624b99b353",
+            "SandboxKey": "/var/run/docker/netns/b60f4ee1e97c",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-0": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.0.25"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-mail-net-0-1",
+                        "mail-net-0",
+                        "7c4f70b6dd57"
+                    ],
+                    "MacAddress": "02:42:0a:01:00:19",
+                    "NetworkID": "65f2e34b125e0659c8d92885cfd53a64c656459b9251abbf56727ba38d95c81f",
+                    "EndpointID": "0fc6009018c9d5c8d99a4e28346b38815d67d10a717a42ffa3a93a5c8d850097",
+                    "Gateway": "10.1.0.1",
+                    "IPAddress": "10.1.0.25",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-mail-net-0-1",
+                        "mail-net-0",
+                        "7c4f70b6dd57"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab",
+        "Created": "2024-04-06T09:33:47.413349113Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2117,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:51.370068967Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:548abd6367579ea11c1ee75b764ab8c149b6094547e7f32b143fa2666f751bdc",
+        "ResolvConfPath": "/var/lib/docker/containers/fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab/hostname",
+        "HostsPath": "/var/lib/docker/containers/fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab/hosts",
+        "LogPath": "/var/lib/docker/containers/fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab/fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab-json.log",
+        "Name": "/labpostfixctp-mail-net-2-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dovecot-net-2:/etc/dovecot:rw",
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/postfix-net-2:/etc/postfix:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-2",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/5a838214d2bd94075ae61c4eebc9b64be6806da3ba287c12795ddffb74db2127-init/diff:/var/lib/docker/overlay2/s6s4xw743o1k26exdhczandlj/diff:/var/lib/docker/overlay2/zr2w8bzye9oirtmzyewzjs0l3/diff:/var/lib/docker/overlay2/yjqmxo1zryjx9vllhmsguiuqy/diff:/var/lib/docker/overlay2/vprwf217b1i7svv3e55pavz1u/diff:/var/lib/docker/overlay2/qjnk3o2qzabta2c0f7chjya24/diff:/var/lib/docker/overlay2/ya5pgzw6e5c0svtf07ing7uli/diff:/var/lib/docker/overlay2/jkal46d55gx6w7hr4dqpnz9na/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/5a838214d2bd94075ae61c4eebc9b64be6806da3ba287c12795ddffb74db2127/merged",
+                "UpperDir": "/var/lib/docker/overlay2/5a838214d2bd94075ae61c4eebc9b64be6806da3ba287c12795ddffb74db2127/diff",
+                "WorkDir": "/var/lib/docker/overlay2/5a838214d2bd94075ae61c4eebc9b64be6806da3ba287c12795ddffb74db2127/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/postfix-net-2",
+                "Destination": "/etc/postfix",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "fc5306fce4c96313287edd9a320ca5784ad075cd59bc05f41db964836c5848c9",
+                "Source": "/var/lib/docker/volumes/fc5306fce4c96313287edd9a320ca5784ad075cd59bc05f41db964836c5848c9/_data",
+                "Destination": "/sys/fs/cgroup",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dovecot-net-2",
+                "Destination": "/etc/dovecot",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "mail-net-2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "postfix-alpine",
+            "Volumes": {
+                "/sys/fs/cgroup": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:02:19",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "d7e89090607c7a75870d93c331a510fea67942cbfe181cf96f817fe8073ba810",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:548abd6367579ea11c1ee75b764ab8c149b6094547e7f32b143fa2666f751bdc",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "mail-net-2",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "c7bbd851f80cce9d0c5cb44855d06bb27022f801a021efee17ede1a853888eea",
+            "SandboxKey": "/var/run/docker/netns/c7bbd851f80c",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.2.25"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-mail-net-2-1",
+                        "mail-net-2",
+                        "fafcd6b24432"
+                    ],
+                    "MacAddress": "02:42:0a:01:02:19",
+                    "NetworkID": "91526595a240549273746a6cac61c4f21d1b2fe78eeba4c1923ce82a5e2c11c0",
+                    "EndpointID": "25e70cb3ba43cadb87703e661a8915c4b90bc52a1ec039ff157fd0649cb4e5a0",
+                    "Gateway": "10.1.2.1",
+                    "IPAddress": "10.1.2.25",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-mail-net-2-1",
+                        "mail-net-2",
+                        "fafcd6b24432"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269",
+        "Created": "2024-04-06T09:33:47.409916467Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2106,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:51.30056266Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:548abd6367579ea11c1ee75b764ab8c149b6094547e7f32b143fa2666f751bdc",
+        "ResolvConfPath": "/var/lib/docker/containers/4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269/hostname",
+        "HostsPath": "/var/lib/docker/containers/4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269/hosts",
+        "LogPath": "/var/lib/docker/containers/4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269/4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269-json.log",
+        "Name": "/labpostfixctp-mail-net-1-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/postfix-net-1:/etc/postfix:rw",
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dovecot-net-1:/etc/dovecot:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-1",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/0d1b3ba8b56c789cf8b2452cba111417ac12d1b251d65affe6bfabbc81b54147-init/diff:/var/lib/docker/overlay2/s6s4xw743o1k26exdhczandlj/diff:/var/lib/docker/overlay2/zr2w8bzye9oirtmzyewzjs0l3/diff:/var/lib/docker/overlay2/yjqmxo1zryjx9vllhmsguiuqy/diff:/var/lib/docker/overlay2/vprwf217b1i7svv3e55pavz1u/diff:/var/lib/docker/overlay2/qjnk3o2qzabta2c0f7chjya24/diff:/var/lib/docker/overlay2/ya5pgzw6e5c0svtf07ing7uli/diff:/var/lib/docker/overlay2/jkal46d55gx6w7hr4dqpnz9na/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/0d1b3ba8b56c789cf8b2452cba111417ac12d1b251d65affe6bfabbc81b54147/merged",
+                "UpperDir": "/var/lib/docker/overlay2/0d1b3ba8b56c789cf8b2452cba111417ac12d1b251d65affe6bfabbc81b54147/diff",
+                "WorkDir": "/var/lib/docker/overlay2/0d1b3ba8b56c789cf8b2452cba111417ac12d1b251d65affe6bfabbc81b54147/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/postfix-net-1",
+                "Destination": "/etc/postfix",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dovecot-net-1",
+                "Destination": "/etc/dovecot",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "7d4a1c02eae9f9d5c09e71b2bd811c6e2fe10a1d5ec7f0c2b9b906cbef97b7d9",
+                "Source": "/var/lib/docker/volumes/7d4a1c02eae9f9d5c09e71b2bd811c6e2fe10a1d5ec7f0c2b9b906cbef97b7d9/_data",
+                "Destination": "/sys/fs/cgroup",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "mail-net-1",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "postfix-alpine",
+            "Volumes": {
+                "/sys/fs/cgroup": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:01:19",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "5f822fa87e7ca3b787badebd87cc4817bba1d768f7f2992d19f66e27cf634c26",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:548abd6367579ea11c1ee75b764ab8c149b6094547e7f32b143fa2666f751bdc",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "mail-net-1",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "a9d6eddc0fc3596cc6ff6c5c3465aafb72457b35b8ff77d7d23deb3739870152",
+            "SandboxKey": "/var/run/docker/netns/a9d6eddc0fc3",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-1": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.1.25"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-mail-net-1-1",
+                        "mail-net-1",
+                        "4dd8df0f6c4f"
+                    ],
+                    "MacAddress": "02:42:0a:01:01:19",
+                    "NetworkID": "b9c0068129ec5a65cd2d9573757557506c85b0b6fdbd4eb27ea4338536bac7f9",
+                    "EndpointID": "b642b8a00bd1ffd9718c1cf83eb52e2b209b23b5f354ee954855512dd7911981",
+                    "Gateway": "10.1.1.1",
+                    "IPAddress": "10.1.1.25",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-mail-net-1-1",
+                        "mail-net-1",
+                        "4dd8df0f6c4f"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b",
+        "Created": "2024-04-06T09:33:47.408928863Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2037,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:51.069871513Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:9b0039fc4a78d677d808d3ff0c2ca0cb4b3fb0e8383b50f961a2ab83e2149b2a",
+        "ResolvConfPath": "/var/lib/docker/containers/a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b/hostname",
+        "HostsPath": "/var/lib/docker/containers/a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b/hosts",
+        "LogPath": "/var/lib/docker/containers/a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b/a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b-json.log",
+        "Name": "/labpostfixctp-dns-net-2-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dns-net-2:/etc/bind:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-2",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/83d50b42cf8e9d16b43bb01fa02b048504dd5f9b067d7310a91c875802001c46-init/diff:/var/lib/docker/overlay2/0mm4ybjbdug984m2tpsmqzbn2/diff:/var/lib/docker/overlay2/sok202qx7ruk86qisvucqoioo/diff:/var/lib/docker/overlay2/1g4aggmz0zc8munl9mlz324m7/diff:/var/lib/docker/overlay2/tyfxm561elgbtrb9d9gf882zg/diff:/var/lib/docker/overlay2/k2sa58c0qbxtnsdqtvyf9r5d5/diff:/var/lib/docker/overlay2/ytbm56gd035m9adktb56voy4o/diff:/var/lib/docker/overlay2/x61fv0xd7hzko53j81ajj6oy7/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/83d50b42cf8e9d16b43bb01fa02b048504dd5f9b067d7310a91c875802001c46/merged",
+                "UpperDir": "/var/lib/docker/overlay2/83d50b42cf8e9d16b43bb01fa02b048504dd5f9b067d7310a91c875802001c46/diff",
+                "WorkDir": "/var/lib/docker/overlay2/83d50b42cf8e9d16b43bb01fa02b048504dd5f9b067d7310a91c875802001c46/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dns-net-2",
+                "Destination": "/etc/bind",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "7b84721311400c5ed924c577a14fe39cde651b3319dd69e473a498430d4099ed",
+                "Source": "/var/lib/docker/volumes/7b84721311400c5ed924c577a14fe39cde651b3319dd69e473a498430d4099ed/_data",
+                "Destination": "/sys/fs/cgroup",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "dns-net-2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "bind9-alpine",
+            "Volumes": {
+                "/sys/fs/cgroup": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:02:35",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "910e321f04b6c0f3e097a5f1b7fc0ee65a39cb76ae13209514f3aa32f078b79c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:9b0039fc4a78d677d808d3ff0c2ca0cb4b3fb0e8383b50f961a2ab83e2149b2a",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "dns-net-2",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "b2b2c92b1adc92f9cab2760743f99377f39c6e5f12e1b57a354bdca61b48ced5",
+            "SandboxKey": "/var/run/docker/netns/b2b2c92b1adc",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.2.53"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-dns-net-2-1",
+                        "dns-net-2",
+                        "a811578aaeb8"
+                    ],
+                    "MacAddress": "02:42:0a:01:02:35",
+                    "NetworkID": "91526595a240549273746a6cac61c4f21d1b2fe78eeba4c1923ce82a5e2c11c0",
+                    "EndpointID": "d1e019e99ae2d239f400546b4929d5865c5ea89bf7dc7156ec0b464ad86d806e",
+                    "Gateway": "10.1.2.1",
+                    "IPAddress": "10.1.2.53",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-dns-net-2-1",
+                        "dns-net-2",
+                        "a811578aaeb8"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403",
+        "Created": "2024-04-06T09:33:47.406389271Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2025,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:50.90788458Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:9b0039fc4a78d677d808d3ff0c2ca0cb4b3fb0e8383b50f961a2ab83e2149b2a",
+        "ResolvConfPath": "/var/lib/docker/containers/60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403/hostname",
+        "HostsPath": "/var/lib/docker/containers/60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403/hosts",
+        "LogPath": "/var/lib/docker/containers/60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403/60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403-json.log",
+        "Name": "/labpostfixctp-dns-net-0-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dns-net-0:/etc/bind:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-0",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/af30c275686607654a5424d10f062d2162c8a3725793a02a3c1f37c07389be02-init/diff:/var/lib/docker/overlay2/0mm4ybjbdug984m2tpsmqzbn2/diff:/var/lib/docker/overlay2/sok202qx7ruk86qisvucqoioo/diff:/var/lib/docker/overlay2/1g4aggmz0zc8munl9mlz324m7/diff:/var/lib/docker/overlay2/tyfxm561elgbtrb9d9gf882zg/diff:/var/lib/docker/overlay2/k2sa58c0qbxtnsdqtvyf9r5d5/diff:/var/lib/docker/overlay2/ytbm56gd035m9adktb56voy4o/diff:/var/lib/docker/overlay2/x61fv0xd7hzko53j81ajj6oy7/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/af30c275686607654a5424d10f062d2162c8a3725793a02a3c1f37c07389be02/merged",
+                "UpperDir": "/var/lib/docker/overlay2/af30c275686607654a5424d10f062d2162c8a3725793a02a3c1f37c07389be02/diff",
+                "WorkDir": "/var/lib/docker/overlay2/af30c275686607654a5424d10f062d2162c8a3725793a02a3c1f37c07389be02/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "516bce088f927744a04866830ae29c0c4737d438931743b7009edafcc7660c39",
+                "Source": "/var/lib/docker/volumes/516bce088f927744a04866830ae29c0c4737d438931743b7009edafcc7660c39/_data",
+                "Destination": "/sys/fs/cgroup",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dns-net-0",
+                "Destination": "/etc/bind",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "dns-net-0",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "bind9-alpine",
+            "Volumes": {
+                "/sys/fs/cgroup": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:00:35",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "bc4a780127b0aaa42a98a704f1fa2c76573cb6c82a182da149a26e959ff6d43a",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:9b0039fc4a78d677d808d3ff0c2ca0cb4b3fb0e8383b50f961a2ab83e2149b2a",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "dns-net-0",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "f6cb47e52761188ba6315a40ced9360171187289ffad87a5b4595432d6431fa2",
+            "SandboxKey": "/var/run/docker/netns/f6cb47e52761",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-0": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.0.53"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-dns-net-0-1",
+                        "dns-net-0",
+                        "60847f3b0600"
+                    ],
+                    "MacAddress": "02:42:0a:01:00:35",
+                    "NetworkID": "65f2e34b125e0659c8d92885cfd53a64c656459b9251abbf56727ba38d95c81f",
+                    "EndpointID": "857a06779349324fbd5662bf5a392ceb4684216b3229a7c88ecdec4c028f9cf6",
+                    "Gateway": "10.1.0.1",
+                    "IPAddress": "10.1.0.53",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-dns-net-0-1",
+                        "dns-net-0",
+                        "60847f3b0600"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc",
+        "Created": "2024-04-06T09:33:47.404574928Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2051,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:51.215070648Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:9b0039fc4a78d677d808d3ff0c2ca0cb4b3fb0e8383b50f961a2ab83e2149b2a",
+        "ResolvConfPath": "/var/lib/docker/containers/a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc/hostname",
+        "HostsPath": "/var/lib/docker/containers/a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc/hosts",
+        "LogPath": "/var/lib/docker/containers/a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc/a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc-json.log",
+        "Name": "/labpostfixctp-dns-net-1-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dns-net-1:/etc/bind:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-1",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/f2bdb66dce3e35aa9de050ce06acf0cebcedaca1c6e858aac8d45e8def1c52c5-init/diff:/var/lib/docker/overlay2/0mm4ybjbdug984m2tpsmqzbn2/diff:/var/lib/docker/overlay2/sok202qx7ruk86qisvucqoioo/diff:/var/lib/docker/overlay2/1g4aggmz0zc8munl9mlz324m7/diff:/var/lib/docker/overlay2/tyfxm561elgbtrb9d9gf882zg/diff:/var/lib/docker/overlay2/k2sa58c0qbxtnsdqtvyf9r5d5/diff:/var/lib/docker/overlay2/ytbm56gd035m9adktb56voy4o/diff:/var/lib/docker/overlay2/x61fv0xd7hzko53j81ajj6oy7/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/f2bdb66dce3e35aa9de050ce06acf0cebcedaca1c6e858aac8d45e8def1c52c5/merged",
+                "UpperDir": "/var/lib/docker/overlay2/f2bdb66dce3e35aa9de050ce06acf0cebcedaca1c6e858aac8d45e8def1c52c5/diff",
+                "WorkDir": "/var/lib/docker/overlay2/f2bdb66dce3e35aa9de050ce06acf0cebcedaca1c6e858aac8d45e8def1c52c5/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/dns-net-1",
+                "Destination": "/etc/bind",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "2b90af2a7cb1ea858cf552a7e324ece4369b4f125a4c8933e27b5b2cb9c810dd",
+                "Source": "/var/lib/docker/volumes/2b90af2a7cb1ea858cf552a7e324ece4369b4f125a4c8933e27b5b2cb9c810dd/_data",
+                "Destination": "/sys/fs/cgroup",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "dns-net-1",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "bind9-alpine",
+            "Volumes": {
+                "/sys/fs/cgroup": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:01:35",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "44213f7540a5f3df3965eeaaf152b9e7c63d0e5b80f53f9ca536d3a1a6ffcd0d",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:9b0039fc4a78d677d808d3ff0c2ca0cb4b3fb0e8383b50f961a2ab83e2149b2a",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "dns-net-1",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "1824994af2a174fe68c25ece3153b5264968dc527f6211575b0e4d4b2237e11f",
+            "SandboxKey": "/var/run/docker/netns/1824994af2a1",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-1": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.1.53"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-dns-net-1-1",
+                        "dns-net-1",
+                        "a8cf6a734d64"
+                    ],
+                    "MacAddress": "02:42:0a:01:01:35",
+                    "NetworkID": "b9c0068129ec5a65cd2d9573757557506c85b0b6fdbd4eb27ea4338536bac7f9",
+                    "EndpointID": "b1d9c9243484350c2dc30295b10ba7ad7312554d54ee5c37f2e5b21d44afd9ff",
+                    "Gateway": "10.1.1.1",
+                    "IPAddress": "10.1.1.53",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-dns-net-1-1",
+                        "dns-net-1",
+                        "a8cf6a734d64"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea",
+        "Created": "2024-04-06T09:33:47.402842536Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1933,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:50.860724289Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2c13fa1ee903fb5779409ccbb01bf418350d3860752af85d526ca29c720df891",
+        "ResolvConfPath": "/var/lib/docker/containers/744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea/hostname",
+        "HostsPath": "/var/lib/docker/containers/744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea/hosts",
+        "LogPath": "/var/lib/docker/containers/744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea/744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea-json.log",
+        "Name": "/labpostfixctp-client-net-1-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-1",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/892de518f13d9c06c342845764ee05d4351a5de459f24a8cec9990529a00f65e-init/diff:/var/lib/docker/overlay2/3ayp04zejiqpjut1gz7f6gtev/diff:/var/lib/docker/overlay2/ytzb8g94f84u27f4suchkno3y/diff:/var/lib/docker/overlay2/dysf1mh88eamkkncdv2d16hbg/diff:/var/lib/docker/overlay2/5p1tnu123qoundlmb7trduayk/diff:/var/lib/docker/overlay2/10qwvayuaie2sycw1crinsr07/diff:/var/lib/docker/overlay2/jkatba6l2ghom4e5n7m2k3543/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/892de518f13d9c06c342845764ee05d4351a5de459f24a8cec9990529a00f65e/merged",
+                "UpperDir": "/var/lib/docker/overlay2/892de518f13d9c06c342845764ee05d4351a5de459f24a8cec9990529a00f65e/diff",
+                "WorkDir": "/var/lib/docker/overlay2/892de518f13d9c06c342845764ee05d4351a5de459f24a8cec9990529a00f65e/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "client-net-1",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "alpine-mutt",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:01:02",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "93cdac870f68d40467debe51db1d6af4d6eb451fde7f45f31c7cf958da251565",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:2c13fa1ee903fb5779409ccbb01bf418350d3860752af85d526ca29c720df891",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "client-net-1",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "879ab93d8f41b3e35aee33864a76d6bf8bf561bdc5b52fdc5aa8d5a04253cf79",
+            "SandboxKey": "/var/run/docker/netns/879ab93d8f41",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-1": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.1.2"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-client-net-1-1",
+                        "client-net-1",
+                        "744d219b3633"
+                    ],
+                    "MacAddress": "02:42:0a:01:01:02",
+                    "NetworkID": "b9c0068129ec5a65cd2d9573757557506c85b0b6fdbd4eb27ea4338536bac7f9",
+                    "EndpointID": "1b95bb8165643a59bbe2f49ed05ee7851eb52c40b527e872952e026a0b50738d",
+                    "Gateway": "10.1.1.1",
+                    "IPAddress": "10.1.1.2",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-client-net-1-1",
+                        "client-net-1",
+                        "744d219b3633"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c",
+        "Created": "2024-04-06T09:33:47.401555843Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1914,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:50.670165143Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2c13fa1ee903fb5779409ccbb01bf418350d3860752af85d526ca29c720df891",
+        "ResolvConfPath": "/var/lib/docker/containers/8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c/hostname",
+        "HostsPath": "/var/lib/docker/containers/8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c/hosts",
+        "LogPath": "/var/lib/docker/containers/8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c/8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c-json.log",
+        "Name": "/labpostfixctp-client-net-2-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_private-net-2",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/8bdd3df5909d4bcbd2d464e4af2fa326157ec91ed8d6071ae59898d987affe08-init/diff:/var/lib/docker/overlay2/3ayp04zejiqpjut1gz7f6gtev/diff:/var/lib/docker/overlay2/ytzb8g94f84u27f4suchkno3y/diff:/var/lib/docker/overlay2/dysf1mh88eamkkncdv2d16hbg/diff:/var/lib/docker/overlay2/5p1tnu123qoundlmb7trduayk/diff:/var/lib/docker/overlay2/10qwvayuaie2sycw1crinsr07/diff:/var/lib/docker/overlay2/jkatba6l2ghom4e5n7m2k3543/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/8bdd3df5909d4bcbd2d464e4af2fa326157ec91ed8d6071ae59898d987affe08/merged",
+                "UpperDir": "/var/lib/docker/overlay2/8bdd3df5909d4bcbd2d464e4af2fa326157ec91ed8d6071ae59898d987affe08/diff",
+                "WorkDir": "/var/lib/docker/overlay2/8bdd3df5909d4bcbd2d464e4af2fa326157ec91ed8d6071ae59898d987affe08/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "client-net-2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INTERNAL=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "alpine-mutt",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:01:02:02",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "903f0892ba3347c3c8ae4e4b3e3f90f0944f86cd50ca2ad323171b64d209cb3f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:2c13fa1ee903fb5779409ccbb01bf418350d3860752af85d526ca29c720df891",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "client-net-2",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "48395a4dd60391a9cce580e59ba0ca8f7faf3fffa3b2c59b448747f061f2843c",
+            "SandboxKey": "/var/run/docker/netns/48395a4dd603",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_private-net-2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.2.2"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-client-net-2-1",
+                        "client-net-2",
+                        "8d33db20a83a"
+                    ],
+                    "MacAddress": "02:42:0a:01:02:02",
+                    "NetworkID": "91526595a240549273746a6cac61c4f21d1b2fe78eeba4c1923ce82a5e2c11c0",
+                    "EndpointID": "5a70d3d73a2e5f6fbf264fbd31812d9caeda2fcfdbe61e86f09c9216a6f3a57f",
+                    "Gateway": "10.1.2.1",
+                    "IPAddress": "10.1.2.2",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-client-net-2-1",
+                        "client-net-2",
+                        "8d33db20a83a"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e",
+        "Created": "2024-04-06T09:33:47.392351738Z",
+        "Path": "/entry.sh",
+        "Args": [
+            "/usr/sbin/sshd",
+            "-D"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2094,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-06T09:33:51.352855338Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:d2a83b4cc88a1665b25689818d8fee3d1cc40518e39a7a173cf25f26be821326",
+        "ResolvConfPath": "/var/lib/docker/containers/35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e/hostname",
+        "HostsPath": "/var/lib/docker/containers/35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e/hosts",
+        "LogPath": "/var/lib/docker/containers/35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e/35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e-json.log",
+        "Name": "/labpostfixctp-R1-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "unconfined",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/.newentry.sh:/entry.sh:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "labpostfixctp_internet-access",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/a4e3fe616b0623e8ec0aedca4662485956515ce0067c89005cbbd9b966d980e4-init/diff:/var/lib/docker/overlay2/pm2kpu01hjmgl37j3vdxchctx/diff:/var/lib/docker/overlay2/iz6ux9y27wkminp5z47e9ovi2/diff:/var/lib/docker/overlay2/16ioi2yu35tofg9u8vjlzlsq2/diff:/var/lib/docker/overlay2/1sjuxx0i0bw4sl2ztaq3ag9je/diff:/var/lib/docker/overlay2/mdjvqmmu5aww4e57t6z28q1v1/diff:/var/lib/docker/overlay2/xv7uolbz04e4z38lytnxkimws/diff:/var/lib/docker/overlay2/f9cbb8379e9bf3abf186ffbf4f113796d3554c6519f7ca53d2cf33f06b858063/diff",
+                "MergedDir": "/var/lib/docker/overlay2/a4e3fe616b0623e8ec0aedca4662485956515ce0067c89005cbbd9b966d980e4/merged",
+                "UpperDir": "/var/lib/docker/overlay2/a4e3fe616b0623e8ec0aedca4662485956515ce0067c89005cbbd9b966d980e4/diff",
+                "WorkDir": "/var/lib/docker/overlay2/a4e3fe616b0623e8ec0aedca4662485956515ce0067c89005cbbd9b966d980e4/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/.newentry.sh",
+                "Destination": "/entry.sh",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "R1",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "NAT=true",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/usr/sbin/sshd",
+                "-D"
+            ],
+            "Image": "router-alpine",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entry.sh"
+            ],
+            "MacAddress": "02:42:0a:00:01:fe",
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "908771418844a60dd7cf6d5489e31c7dd050354524332df3514653518eba7a4c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:d2a83b4cc88a1665b25689818d8fee3d1cc40518e39a7a173cf25f26be821326",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labpostfixctp",
+                "com.docker.compose.project.config_files": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/ig2i/Labs.tests/LAB.POSTFIX.CTP",
+                "com.docker.compose.service": "R1",
+                "com.docker.compose.version": "2.24.5"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "c2551e213d47fc893e85250813cb8783f23d765df3ec1ca245680ad2e403cf78",
+            "SandboxKey": "/var/run/docker/netns/c2551e213d47",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "labpostfixctp_internet-access": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.0.1.254"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ],
+                    "MacAddress": "02:42:0a:00:01:fe",
+                    "NetworkID": "aaa85da4ca1147444e497c49cdaec5e399344d54bba55b6415a74736bac7f508",
+                    "EndpointID": "1144be54fe4294cc782c905a969315b0f9697995b0b64cfda80c0d03d4118d12",
+                    "Gateway": "10.0.1.1",
+                    "IPAddress": "10.0.1.254",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ]
+                },
+                "labpostfixctp_private-net-0": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.0.254"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ],
+                    "MacAddress": "02:42:0a:01:00:fe",
+                    "NetworkID": "65f2e34b125e0659c8d92885cfd53a64c656459b9251abbf56727ba38d95c81f",
+                    "EndpointID": "feba66420e9ab3cdfabf8bb8b412d245b6356a9fb8a05e7946c8f5e61461c6a6",
+                    "Gateway": "10.1.0.1",
+                    "IPAddress": "10.1.0.254",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ]
+                },
+                "labpostfixctp_private-net-1": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.1.254"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ],
+                    "MacAddress": "02:42:0a:01:01:fe",
+                    "NetworkID": "b9c0068129ec5a65cd2d9573757557506c85b0b6fdbd4eb27ea4338536bac7f9",
+                    "EndpointID": "ecefcb1aa85af01613be8a2ece0ff8a8cfacedb990685e26476a0c9a8e28df4e",
+                    "Gateway": "10.1.1.1",
+                    "IPAddress": "10.1.1.254",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ]
+                },
+                "labpostfixctp_private-net-2": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.1.2.254"
+                    },
+                    "Links": null,
+                    "Aliases": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ],
+                    "MacAddress": "02:42:0a:01:02:fe",
+                    "NetworkID": "91526595a240549273746a6cac61c4f21d1b2fe78eeba4c1923ce82a5e2c11c0",
+                    "EndpointID": "ebfc6217ce5116a3f87d6eecdf41289dbe04d78defaaba4205947b31cda1a202",
+                    "Gateway": "10.1.2.1",
+                    "IPAddress": "10.1.2.254",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "labpostfixctp-R1-1",
+                        "R1",
+                        "35ab1a2642be"
+                    ]
+                }
+            }
+        }
+    }
+]

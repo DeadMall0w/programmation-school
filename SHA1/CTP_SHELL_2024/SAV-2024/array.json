@@ -1,0 +1,28 @@
+[
+{
+	"name": "Paul",
+	"age": 40,
+	"height": 190,
+	"hobbies": [
+		"reading",
+		"movies"
+	]
+},
+{
+	"name": "Peter",
+	"age": 25,
+	"height": 172,
+	"hobbies": [
+		"tv",
+		"movies"
+	]
+},
+{
+	"name": "John",
+	"age": 45,
+	"height": 181,
+	"hobbies": [
+		"hockey"
+	]
+}
+]

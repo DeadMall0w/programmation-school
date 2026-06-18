@@ -1,0 +1,3 @@
+Ligne 1 : Bonjour !
+Ligne 2 : Voici un texte sur plusieurs lignes.
+Ligne 3 : Fin du document.

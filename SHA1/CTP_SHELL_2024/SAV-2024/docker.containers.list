@@ -1,0 +1,11 @@
+CONTAINER ID   IMAGE            COMMAND                  CREATED        STATUS        PORTS     NAMES
+1db61cbe5f64   alpine-mutt      "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-client-net-0-1
+7c4f70b6dd57   postfix-alpine   "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-mail-net-0-1
+fafcd6b24432   postfix-alpine   "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-mail-net-2-1
+4dd8df0f6c4f   postfix-alpine   "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-mail-net-1-1
+a811578aaeb8   bind9-alpine     "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-dns-net-2-1
+60847f3b0600   bind9-alpine     "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-dns-net-0-1
+a8cf6a734d64   bind9-alpine     "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-dns-net-1-1
+744d219b3633   alpine-mutt      "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-client-net-1-1
+8d33db20a83a   alpine-mutt      "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-client-net-2-1
+35ab1a2642be   router-alpine    "/entry.sh /usr/sbin…"   32 hours ago   Up 32 hours             labpostfixctp-R1-1

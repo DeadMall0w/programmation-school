@@ -1,0 +1,302 @@
+[
+    {
+        "Name": "bridge",
+        "Id": "c1177505053f9ce7bd79cd42718b9e749362d525a075c48d2a9524f178754fcb",
+        "Created": "2024-04-06T08:54:10.537202103+02:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    },
+    {
+        "Name": "host",
+        "Id": "06e115af80b417caaa8993da428c0e5e1b4691219e8ca4cb19e64d46878cd79f",
+        "Created": "2022-12-21T15:31:56.040255763+01:00",
+        "Scope": "local",
+        "Driver": "host",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": null
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {},
+        "Labels": {}
+    },
+    {
+        "Name": "labpostfixctp_internet-access",
+        "Id": "aaa85da4ca1147444e497c49cdaec5e399344d54bba55b6415a74736bac7f508",
+        "Created": "2024-04-06T11:33:47.119114912+02:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.0.1.0/24"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e": {
+                "Name": "labpostfixctp-R1-1",
+                "EndpointID": "1144be54fe4294cc782c905a969315b0f9697995b0b64cfda80c0d03d4118d12",
+                "MacAddress": "02:42:0a:00:01:fe",
+                "IPv4Address": "10.0.1.254/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "internet-access",
+            "com.docker.compose.project": "labpostfixctp",
+            "com.docker.compose.version": "2.24.5"
+        }
+    },
+    {
+        "Name": "labpostfixctp_private-net-0",
+        "Id": "65f2e34b125e0659c8d92885cfd53a64c656459b9251abbf56727ba38d95c81f",
+        "Created": "2024-04-06T11:33:47.200625899+02:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.1.0.0/24"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "1db61cbe5f647b49d301e5319491bea095a72caf0d871e69e45910ef18e82a27": {
+                "Name": "labpostfixctp-client-net-0-1",
+                "EndpointID": "38a50d40d71708a58e71147efee767aba62decb152bd9a4bbe2297c0b8125cad",
+                "MacAddress": "02:42:0a:01:00:02",
+                "IPv4Address": "10.1.0.2/24",
+                "IPv6Address": ""
+            },
+            "35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e": {
+                "Name": "labpostfixctp-R1-1",
+                "EndpointID": "feba66420e9ab3cdfabf8bb8b412d245b6356a9fb8a05e7946c8f5e61461c6a6",
+                "MacAddress": "02:42:0a:01:00:fe",
+                "IPv4Address": "10.1.0.254/24",
+                "IPv6Address": ""
+            },
+            "60847f3b0600e2384886c024bce152a0b77a00736e4e03dfc2d0c69140ca5403": {
+                "Name": "labpostfixctp-dns-net-0-1",
+                "EndpointID": "857a06779349324fbd5662bf5a392ceb4684216b3229a7c88ecdec4c028f9cf6",
+                "MacAddress": "02:42:0a:01:00:35",
+                "IPv4Address": "10.1.0.53/24",
+                "IPv6Address": ""
+            },
+            "7c4f70b6dd5722ea720016afdcba745c0659accebcc2e4ee16e757f9aec59cb6": {
+                "Name": "labpostfixctp-mail-net-0-1",
+                "EndpointID": "0fc6009018c9d5c8d99a4e28346b38815d67d10a717a42ffa3a93a5c8d850097",
+                "MacAddress": "02:42:0a:01:00:19",
+                "IPv4Address": "10.1.0.25/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "private-net-0",
+            "com.docker.compose.project": "labpostfixctp",
+            "com.docker.compose.version": "2.24.5"
+        }
+    },
+    {
+        "Name": "labpostfixctp_private-net-1",
+        "Id": "b9c0068129ec5a65cd2d9573757557506c85b0b6fdbd4eb27ea4338536bac7f9",
+        "Created": "2024-04-06T11:33:47.281857397+02:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.1.1.0/24"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e": {
+                "Name": "labpostfixctp-R1-1",
+                "EndpointID": "ecefcb1aa85af01613be8a2ece0ff8a8cfacedb990685e26476a0c9a8e28df4e",
+                "MacAddress": "02:42:0a:01:01:fe",
+                "IPv4Address": "10.1.1.254/24",
+                "IPv6Address": ""
+            },
+            "4dd8df0f6c4fe36d0c64d70216dbaaac18e049884de508f3a6993a6a45f70269": {
+                "Name": "labpostfixctp-mail-net-1-1",
+                "EndpointID": "b642b8a00bd1ffd9718c1cf83eb52e2b209b23b5f354ee954855512dd7911981",
+                "MacAddress": "02:42:0a:01:01:19",
+                "IPv4Address": "10.1.1.25/24",
+                "IPv6Address": ""
+            },
+            "744d219b3633308075a3fa204a6034106d9fdfa39ed98009e4564ed1cc7744ea": {
+                "Name": "labpostfixctp-client-net-1-1",
+                "EndpointID": "1b95bb8165643a59bbe2f49ed05ee7851eb52c40b527e872952e026a0b50738d",
+                "MacAddress": "02:42:0a:01:01:02",
+                "IPv4Address": "10.1.1.2/24",
+                "IPv6Address": ""
+            },
+            "a8cf6a734d641defb0dc15d70a4c5741adf03a5c05099031afb6d40e57b421fc": {
+                "Name": "labpostfixctp-dns-net-1-1",
+                "EndpointID": "b1d9c9243484350c2dc30295b10ba7ad7312554d54ee5c37f2e5b21d44afd9ff",
+                "MacAddress": "02:42:0a:01:01:35",
+                "IPv4Address": "10.1.1.53/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "private-net-1",
+            "com.docker.compose.project": "labpostfixctp",
+            "com.docker.compose.version": "2.24.5"
+        }
+    },
+    {
+        "Name": "labpostfixctp_private-net-2",
+        "Id": "91526595a240549273746a6cac61c4f21d1b2fe78eeba4c1923ce82a5e2c11c0",
+        "Created": "2024-04-06T11:33:47.040571923+02:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.1.2.0/24"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "35ab1a2642be939b2182a576623e440a94cf9c7670643940133e35cb05de639e": {
+                "Name": "labpostfixctp-R1-1",
+                "EndpointID": "ebfc6217ce5116a3f87d6eecdf41289dbe04d78defaaba4205947b31cda1a202",
+                "MacAddress": "02:42:0a:01:02:fe",
+                "IPv4Address": "10.1.2.254/24",
+                "IPv6Address": ""
+            },
+            "8d33db20a83a19844bd2f511c7f1a114a0df3f060b299600cfbf3395c59f905c": {
+                "Name": "labpostfixctp-client-net-2-1",
+                "EndpointID": "5a70d3d73a2e5f6fbf264fbd31812d9caeda2fcfdbe61e86f09c9216a6f3a57f",
+                "MacAddress": "02:42:0a:01:02:02",
+                "IPv4Address": "10.1.2.2/24",
+                "IPv6Address": ""
+            },
+            "a811578aaeb8fc60e2063c0fe24fd6c336feb5b99b0552108dcc992f283e437b": {
+                "Name": "labpostfixctp-dns-net-2-1",
+                "EndpointID": "d1e019e99ae2d239f400546b4929d5865c5ea89bf7dc7156ec0b464ad86d806e",
+                "MacAddress": "02:42:0a:01:02:35",
+                "IPv4Address": "10.1.2.53/24",
+                "IPv6Address": ""
+            },
+            "fafcd6b24432d96e8a2120f9339572f272edbdbcf5d85fdcab4d08320eb4deab": {
+                "Name": "labpostfixctp-mail-net-2-1",
+                "EndpointID": "25e70cb3ba43cadb87703e661a8915c4b90bc52a1ec039ff157fd0649cb4e5a0",
+                "MacAddress": "02:42:0a:01:02:19",
+                "IPv4Address": "10.1.2.25/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {
+            "com.docker.compose.network": "private-net-2",
+            "com.docker.compose.project": "labpostfixctp",
+            "com.docker.compose.version": "2.24.5"
+        }
+    },
+    {
+        "Name": "none",
+        "Id": "9c28afba2d1b6c22bf315b456717e545fd084d8cc8938ea378ba32b5666c09e6",
+        "Created": "2022-12-21T15:31:56.028039069+01:00",
+        "Scope": "local",
+        "Driver": "null",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": null
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {},
+        "Options": {},
+        "Labels": {}
+    }
+]
