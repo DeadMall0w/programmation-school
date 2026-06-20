@@ -35,7 +35,7 @@ while [ $I -lt 2026 ]; do # tant que I < 2025
     # xargs permet de faire les paquets et sed permet de mettre en forme avec '::'
     #cat etape3.txt | xargs -L 6 | sed 's/ /::/g' > etape4.txt
     mkdir -p out # S'assurer que le fichier existe bien
-    cat etape3.txt | paste -d: - - - - - - > out/${I}
+    cat etape3.txt | paste -d: - - - - - - | sed 's/:/::/g' > out/${I}
     
     I=$(($I+1))
 done

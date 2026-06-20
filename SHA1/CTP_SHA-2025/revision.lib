@@ -1,0 +1,241 @@
+#!/bin/bash
+# ==============================================================================
+# BIBLIOTHÈQUE DE FONCTIONS source TNE2
+# ==============================================================================
+
+normaliser(){
+    #!/bin/bash
+
+    local fichier="$1"
+    # Convertir en format Unix
+	nom=$(basename "$fichier" .html)
+
+    dos2unix $fichier
+
+    # Ligne de début après le motif
+    local D=$(grep -n "TableRonde" $fichier | cut -d: -f1 | head -n1)
+    if [ -z "$D" ]; then
+        echo "Division 1  non trouvé"
+        return 1
+    fi
+    D=$((D + 1))
+
+    tail -n +$D $fichier > temp1
+
+    # Ligne de fin avant </table>
+    local F=$(grep -n '</table>' temp1 | cut -d: -f1 | head -n1)
+    if [ -z "$F" ]; then
+        echo "</table> non trouvé"
+        return 1
+    fi
+    F=$((F - 1))
+
+    head -n +$F temp1 > "temp2"
+
+# on remplace tous les </tr> par des passages à la ligne mais juste avant on retire tous les passages à la ligne
+    tr -d '\n' < "temp2" | sed 's/<\/tr>/\n/g'  > temp3
+
+    # On remplace les </td> par des : puis on nettoie dans le BON ordre
+    sed 's/<\/[Tt][Dd]>/:/g' temp3 \
+        | sed 's/&nbsp;/ /g' \
+        | sed 's/<[^>]*>//g' \
+        | tr -s ' ' \
+        | sed '/^[[:space:]]*$/d' \
+        | tr -d '	' \
+        > "$2/$nom"
+
+    # Optionnel mais propre : supprimer les fichiers temporaires à la fin
+    rm -f temp1 temp2 temp3
+}
+
+
+
+
+normaliser2.0(){
+    local fichier="$1"
+    nom=$(basename "$fichier" .html)
+
+    dos2unix "$fichier" 2>/dev/null
+
+    # Ligne de début
+    local D=$(grep -n "liste_titre" "$fichier" | cut -d: -f1 | head -n1)
+    if [ -z "$D" ]; then
+        echo "Division 1 non trouvée dans $nom"
+        return 1
+    fi
+    D=$((D + 1))
+
+    tail -n +$D "$fichier" > temp1
+
+    # Ligne de fin
+    local F=$(grep -n '</table>' temp1 | cut -d: -f1 | head -n1)
+    if [ -z "$F" ]; then
+        echo "</table> non trouvé dans $nom"
+        rm -f temp1
+        return 1
+    fi
+    F=$((F - 1))
+
+    # CORRECTION ICI : Pas de signe '+' pour head -n
+    head -n "$F" temp1 > temp2
+
+    # Conversion des lignes HTML
+    tr -d '\n' < temp2 | sed 's/<\/tr>/\n/g' > temp3
+
+    # Nettoyage global
+    sed 's/<\/[Tt][Dd]>/:/g' temp3 \
+        | sed 's/&nbsp;/ /g' \
+        | sed 's/<[^>]*>//g' \
+        | tr -s ' ' \
+        | sed '/^[[:space:]]*$/d' \
+        | sed 's/[[:space:]]*:[[:space:]]*/:/g' \
+        | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' \
+        > "$2/$nom"
+
+    # Nettoyage des fichiers temporaires
+    rm -f temp1 temp2 temp3
+}
+
+
+
+Recherche() {
+    # 1. On vide ou crée le fichier de résultat
+    > "$2/joueurs"
+
+    # 2. Lecture ligne par ligne du fichier de configuration ($3)
+    while IFS=: read -r id nom af info elo rapide Blitz Cat Genre Club || [ -n "$id" ]
+    do
+        # Sécurité : si le nom est vide, on passe au suivant
+        [ -z "$nom" ] && continue
+
+        # 3. Boucle sur TOUS les fichiers du dossier $2 (sans se soucier de l'extension)
+        for FICHIER in "$2"/*; do
+            
+            # SÉCURITÉ INDISPENSABLE : On ignore le fichier "joueurs" 
+            # pour éviter qu'il ne se lise lui-même à l'infini !
+            [ "$(basename "$FICHIER")" = "joueurs" ] && continue
+            
+            # Sécurité : on s'assure que c'est bien un fichier et pas un sous-dossier
+            [ -f "$FICHIER" ] || continue
+
+            # 4. On cherche le nom et on ajoute au fichier final
+            cat "$FICHIER" | grep "$nom" >> "$2/joueurs"
+        done
+    done < "$3"
+}
+
+
+
+alea() {
+    # Rôle : Génère un nombre entier aléatoire compris entre un min et un max.
+    # $1 : Valeur minimum
+    # $2 : Valeur maximum
+    min=$1
+    max=$2
+    # Utilise la variable système $RANDOM et le modulo (%) pour borner le résultat
+    expr $RANDOM % \( $max - $min + 1 \) + $min
+}
+
+nblignes () {
+    # Rôle : Retourne le nombre total de lignes d'un fichier.
+    # $1 : Nom du fichier
+    cat "$1" | wc -l
+}
+
+nbchamps () {
+    # Rôle : Retourne le nombre de colonnes (champs) de la première ligne d'un fichier.
+    # $1 : Nom du fichier
+    # $2 : Le caractère séparateur (ex: ':' ou ';')
+    
+    # Logique : On prend la ligne 1, on remplace le séparateur par des sauts de ligne, 
+    # et on compte le nombre de lignes obtenues.
+    cat "$1" | head -1 | tr "$2" '\n' | wc -l
+}
+
+niemeligne (){
+    # Rôle : Extrait exactement la Nième ligne d'un fichier.
+    # $1 : Nom du fichier
+    # $2 : Numéro de la ligne à extraire
+    # Logique : On prend les N premières lignes, puis on ne garde que la toute dernière.
+    cat "$1" | head -n "$2" | tail -n 1
+}
+
+niemechamp () {
+    # Rôle : Extrait la valeur d'une case précise (ligne X, colonne Y) dans un fichier.
+    # $1 : Nom du fichier
+    # $2 : Numéro de la ligne
+    # $3 : Numéro de la colonne (champ)
+    # $4 : Le caractère séparateur
+    FIC=$1
+    NL=$2
+    NC=$3
+    SEP=$4
+    
+    # 1. On récupère d'abord la bonne ligne grâce à notre fonction précédente
+    LINE=$(niemeligne "$FIC" "$NL")
+    # 2. On découpe cette ligne avec 'cut' pour récupérer la bonne colonne
+    echo "$LINE" | cut -d"$SEP" -f"$NC"
+}
+
+intitule () {
+    # Rôle : Récupère le nom d'une colonne (l'en-tête situé sur la 1ère ligne).
+    # $1 : Nom du fichier
+    # $2 : Numéro de la colonne
+    # $3 : Le caractère séparateur
+    
+    # Réutilise niemechamp en forçant la lecture sur la ligne 1
+    niemechamp "$FIC" 1 "$2" "$3"
+}
+
+isnum () {
+    # Rôle : Vérifie si la chaîne passée en paramètre est un nombre entier valide.
+    # $1 : La chaîne à tester
+    # Logique : Utilise une expression régulière. 
+    # ^[-+]? = Commence par un + ou un - (optionnel)
+    # [0-9]+$ = Suivi d'un ou plusieurs chiffres jusqu'à la fin.
+    echo "$1" | egrep -q '^[-+]?[0-9]+$'
+    
+    if [ $? -eq 0 ]; then 
+        echo 1 # C'est bien un nombre
+    else
+        echo 0 # Ce n'est pas un nombre
+    fi 
+}
+
+sepexists() {
+    # Rôle : Vérifie si le séparateur fourni existe au moins une fois dans le fichier.
+    # $1 : Nom du fichier
+    # $2 : Le séparateur à chercher (ex: ':')
+    
+    # egrep -q cherche silencieusement le séparateur
+    cat "$1" | egrep -q "$2"
+    
+    if [ $? -eq 0 ]; then 
+        echo 1 # Le séparateur a été trouvé
+    else
+        echo 0 # Le séparateur est introuvable
+    fi 
+}
+
+echo2 () {
+	echo -en "$*" 1>&2
+}
+
+enter2continue () {
+	#Affiche “ENTREE pour continuer”
+	#Attend l’utilisateur 
+	#Efface l’écran
+	echo2 "ENTREE pour continuer"
+	read PAUSE
+	clear
+}
+
+ask2quit() {
+	#Affiche Quitter [y-N] ? 
+	#Si l’utilisateur saisit “y”, quitte 
+	echo2 "Quitter [y-N] ? "
+	read REP
+	if [ "$REP" = "y" ]; then 
+		exit 0
+	fi
+}

@@ -1,18 +1,18 @@
-1:Lille:45:45:0:vainqueur
-2:St-Etienne:44:18:0:prelim
-3:CORT Roubaix:41:22:0:-
-4:Reims:40:20:0:1/32 f
-5:Rennes:37:5:0:1/16 f
-6:Lens:36:15:0:1/16 f
-7:Rouen:36:6:10185:1/8 f
-8:RC Paris:35:4:0:1/4 f
-9:Marseille:34:5:13094:1/4 f
-10:Cannes:34:-4:0:1/8 f
-11:Red Star:33:3:0:finale
-12:Strasbourg:33:-9:9535:1/16 f
-13:Sete:32:-2:0:1/8 f
-14:Bordeaux:31:-1:0:1/4 f
-15:Lyon:31:-26:0:1/4 f
-16:Le Havre:30:-20:0:1/16 f
-17:Metz:25:-37:0:1/32 f
-18:Sochaux:15:-44:0:1/8 f
+1::Lille::45::45::0::vainqueur
+2::St-Etienne::44::18::0::prelim
+3::CORT Roubaix::41::22::0::-
+4::Reims::40::20::0::1/32 f
+5::Rennes::37::5::0::1/16 f
+6::Lens::36::15::0::1/16 f
+7::Rouen::36::6::10185::1/8 f
+8::RC Paris::35::4::0::1/4 f
+9::Marseille::34::5::13094::1/4 f
+10::Cannes::34::-4::0::1/8 f
+11::Red Star::33::3::0::finale
+12::Strasbourg::33::-9::9535::1/16 f
+13::Sete::32::-2::0::1/8 f
+14::Bordeaux::31::-1::0::1/4 f
+15::Lyon::31::-26::0::1/4 f
+16::Le Havre::30::-20::0::1/16 f
+17::Metz::25::-37::0::1/32 f
+18::Sochaux::15::-44::0::1/8 f

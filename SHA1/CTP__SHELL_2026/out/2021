@@ -1,19 +1,19 @@
-1:Lille:83:41:0:1/8 f
-2:Paris-SG:82:58:0:vainqueur
-3:Monaco:78:34:0:finale
-4:Lyon:76:38:0:1/4 f
-5:Marseille:60:7:0:6
-Rennes:58:12:0:7:Lens
-57:1:0:8:Montpellier:54
--2:0:1/2 f:9:Nice:52
--3:0:1/16 f:10:Metz:47
--4:0:1/8 f:11:St-Etienne:46
--12:0:12:Bordeaux:45:-14
-0:13:Angers:44:-18:0
-1/4 f:14:Reims:42:-8:0
-15:Strasbourg:42:-9:0:16
-Lorient:42:-18:0:17:Brest
-41:-16:0:1/16 f:18:Nantes
-40:-8:0:19:Nimes:35
--31:0:20:Dijon:21:-48
-0:::::
+1::Lille::83::41::0::1/8 f
+2::Paris-SG::82::58::0::vainqueur
+3::Monaco::78::34::0::finale
+4::Lyon::76::38::0::1/4 f
+5::Marseille::60::7::0::6
+Rennes::58::12::0::7::Lens
+57::1::0::8::Montpellier::54
+-2::0::1/2 f::9::Nice::52
+-3::0::1/16 f::10::Metz::47
+-4::0::1/8 f::11::St-Etienne::46
+-12::0::12::Bordeaux::45::-14
+0::13::Angers::44::-18::0
+1/4 f::14::Reims::42::-8::0
+15::Strasbourg::42::-9::0::16
+Lorient::42::-18::0::17::Brest
+41::-16::0::1/16 f::18::Nantes
+40::-8::0::19::Nimes::35
+-31::0::20::Dijon::21::-48
+0::::::::::
