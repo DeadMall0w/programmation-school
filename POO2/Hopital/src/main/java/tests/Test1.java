@@ -5,11 +5,23 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import modele._Service;
+import java.util.HashMap;
+import java.util.Map;
+import modele.Service;
 
 public class Test1 {
     public static void main(String[] args) {
-        final EntityManagerFactory emf = Persistence.createEntityManagerFactory("HopitalPU");
+        String motDePasse = System.getenv("HOPITAL_DB_PASSWORD");
+        if (motDePasse == null) {
+            throw new IllegalStateException("Définissez la variable d'environnement HOPITAL_DB_PASSWORD avant le test.");
+        }
+
+        Map<String, Object> proprietesConnexion = new HashMap<>();
+        proprietesConnexion.put("jakarta.persistence.jdbc.user",
+                System.getenv().getOrDefault("HOPITAL_DB_USER", "root"));
+        proprietesConnexion.put("jakarta.persistence.jdbc.password", motDePasse);
+
+        final EntityManagerFactory emf = Persistence.createEntityManagerFactory("HopitalPU", proprietesConnexion);
         final EntityManager em = emf.createEntityManager();
 
         try {
@@ -17,28 +29,26 @@ public class Test1 {
             try {
                 et.begin();
 
-                _Service serv1 = new _Service("Cardiologie", "Bat A, 1er étage");
-                _Service serv2 = new _Service("Pneumologie", "Bat B, 1er étage");
-                _Service serv3 = new _Service("Urgence", "Bat C, 1er étage");
+                Service serv1 = new Service("Cardiologie", "Bat A, 1er étage");
+                Service serv2 = new Service("Pneumologie", "Bat B, 1er étage");
 
                 em.persist(serv1);
                 em.persist(serv2);
                 serv1.setLocalisation("Bat D, 2ème étage");
 
                 et.commit();
-            } catch (Exception ex) {
-                System.out.println("Exception: " + ex);
+                System.out.println("Services persistés : " + serv1 + " ; " + serv2);
+            } catch (RuntimeException ex) {
                 if (et.isActive()) {
                     et.rollback();
                 }
+                throw ex;
             }
         } finally {
-            if (em != null && em.isOpen()) {
+            if (em.isOpen()) {
                 em.close();
             }
-            if (emf != null && emf.isOpen()) {
-                emf.close();
-            }
+            emf.close();
         }
     }
 }
