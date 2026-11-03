@@ -10,7 +10,6 @@ public class Emprunt {
     private LocalDate dateEmprunt;
     private LocalDate dateRetour;  // null si le livre n'a pas encore été retourné
 
-    // Constructeur par données complet
     public Emprunt(int id, Livre livre, Usager usager, LocalDate dateEmprunt, LocalDate dateRetour) {
         this.id = id;
         this.livre = livre;
@@ -19,7 +18,6 @@ public class Emprunt {
         this.dateRetour = dateRetour;
     }
 
-    // Constructeur pratique lors de la création d'un nouvel emprunt (retour non encore effectué)
     public Emprunt(int id, Livre livre, Usager usager, LocalDate dateEmprunt) {
         this(id, livre, usager, dateEmprunt, null);
     }

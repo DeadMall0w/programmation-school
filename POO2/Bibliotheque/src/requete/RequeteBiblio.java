@@ -204,6 +204,55 @@ public class RequeteBiblio {
         return empruntsEnRetard;
     }
 
+
+    public List<Emprunt> getEmprunts() throws SQLException {
+        List<Emprunt> emprunts = new ArrayList<>();
+
+        // Requête avec jointure sur les 3 tables pour hydrater complètement Livre et Usager
+        String requete = "SELECT e.id_emprunt, e.date_emprunt, e.date_retour, "
+                       + "       l.isbn, l.titre, l.auteur, l.editeur, l.nb_pages, l.annee_publication, "
+                       + "       u.id_usager, u.nom, u.prenom, u.adresse, u.date_naissance "
+                       + "FROM emprunt e "
+                       + "JOIN livre l ON e.fk_isbn = l.isbn "
+                       + "JOIN usager u ON e.fk_id_usager = u.id_usager ";
+
+        PreparedStatement prep = this.connexionBdd.prepareStatement(requete);
+
+        ResultSet result = prep.executeQuery();
+
+        while (result.next()) {
+            int idUsager = result.getInt("id_usager");
+            String nom = result.getString("nom");
+            String prenom = result.getString("prenom");
+            String adresse = result.getString("adresse");
+            Date dateNaiss = result.getDate("date_naissance");
+            Usager usager = new Usager(idUsager, nom, prenom, adresse, dateNaiss);
+
+            String isbn = result.getString("isbn");
+            String titre = result.getString("titre");
+            String auteur = result.getString("auteur");
+            String editeur = result.getString("editeur");
+            int nbPages = result.getInt("nb_pages");
+            int annee = result.getInt("annee_publication");
+
+            Livre livre = new Livre(isbn, titre, auteur, editeur, nbPages, annee);
+
+            
+            int idEmprunt = result.getInt("id_emprunt");
+            LocalDate dateEmp = result.getDate("date_emprunt").toLocalDate();
+            LocalDate dateRet = (result.getDate("date_retour") != null) 
+                              ? result.getDate("date_retour").toLocalDate() 
+                              : null;
+
+            Emprunt emprunt = new Emprunt(idEmprunt, livre, usager, dateEmp, dateRet);
+            emprunts.add(emprunt);
+        }
+
+        result.close();
+        prep.close();
+
+        return emprunts;
+    }
     public List<Emprunt> getEmpruntsEnRetard() throws SQLException {
         return getEmpruntsEnRetard(20);
     }
@@ -236,4 +285,5 @@ public class RequeteBiblio {
 
         return lignesAjoutees > 0;
     }
+
 }
